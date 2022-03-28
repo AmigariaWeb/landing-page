@@ -1,0 +1,17 @@
+header{
+  display: flex;
+  background-color: var(--green);
+
+  #logo{
+    svg{
+      width: 5em;
+      height: 5rem;
+
+
+      image{
+        width: inherit;
+        height: inherit;
+      }
+    }
+  }
+}
