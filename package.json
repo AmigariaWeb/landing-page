@@ -1,0 +1,23 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Amigaria landing page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./src/css/sass/styles.scss:./src/css/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmigariaWeb/landing-page.git"
+  },
+  "author": "Amigaria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmigariaWeb/landing-page/issues"
+  },
+  "homepage": "https://github.com/AmigariaWeb/landing-page#readme",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}
