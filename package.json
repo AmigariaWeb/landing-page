@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Amigaria landing page",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "sass": "sass --watch ./src/css/sass/styles.scss:./src/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
