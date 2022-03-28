@@ -1,16 +1,65 @@
 header{
+  align-items: center;
+  position: relative;
+  background-color: var(--white);
   display: flex;
-  background-color: var(--green);
-
+  height: 5rem;
+  justify-content: flex-end;
+  border-radius: 0 0 0 20px;
+  
   #logo{
-    svg{
-      width: 5em;
-      height: 5rem;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
 
+    svg{
+      background-color: var(--white);
+      border-radius: 50%;
+      border: 10px solid var(--white);
+      height: 5.5rem;
+      width: 5.5em;
 
       image{
         width: inherit;
         height: inherit;
+      }
+    }
+    h1{
+      font-size: 72px;
+      font-family: Helvetica, Arial, sans-serif;
+      padding-bottom: 10px ;
+      color: var(--blue-dark);
+      
+      span{
+        background-color: var(--white);
+        border-radius: 16px;
+        padding-bottom: 0.2rem;
+        
+      }
+    }
+  }
+
+  .navBar{
+    margin-right: 1rem;
+    ul{
+      display: flex;
+      gap: 1rem;
+
+      .button-nav{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px ;
+        font-weight: 700;
+        border-radius: 16px;
+        padding: 0.5rem 0.3rem;
+        border: 3px solid var(--blue-dark);
+        text-decoration: none;
+      }
+
+      .login{
+        background-color: var(--blue-dark);
+        color: var(--white);
       }
     }
   }
