@@ -20,6 +20,11 @@
   "homepage": "https://github.com/AmigariaWeb/landing-page#readme",
   "devDependencies": {
     "@stylelint/postcss-css-in-js": "^0.37.2",
+    "eslint": "^8.12.0",
+    "eslint-config-standard": "^17.0.0-1",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-n": "^14.0.0",
+    "eslint-plugin-promise": "^6.0.0",
     "sass": "^1.49.9",
     "stylelint": "^14.6.1",
     "stylelint-config-standard": "^25.0.0"
