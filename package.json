@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/AmigariaWeb/landing-page#readme",
   "devDependencies": {
-    "sass": "^1.49.9"
+    "@stylelint/postcss-css-in-js": "^0.37.2",
+    "sass": "^1.49.9",
+    "stylelint": "^14.6.1",
+    "stylelint-config-standard": "^25.0.0"
   }
 }
