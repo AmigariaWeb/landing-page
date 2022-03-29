@@ -1,48 +1,42 @@
+/*********** Funcionalidades del Header *************/
+// Selectores
 const header = document.querySelector('header');
-const menuBurger = document.querySelector('#menuBurger');
-const menuBurgerPanel = document.querySelector('#menuPanel')
+const menuBurger = document.querySelector('#menu-burger');
+const menuBurgerPanel = document.querySelector('#menu-panel')
 
-
-
+// Eventos
 window.addEventListener('scroll', changeLogoSize)
+window.addEventListener('resize', resizeHandler);
 menuBurger.addEventListener('click', toogleMenu);
 
+
+//Funciones
 function changeLogoSize() {
   window.scrollY > 0
-    ? header.classList.add('headerOnScroll')
-    : header.classList.remove('headerOnScroll')
+    ? header.classList.add('header-on-scroll')
+    : header.classList.remove('header-on-scroll')
 }
 
 function toogleMenu() {
-  menuBurger.classList.toggle('switchBurger');
-  menuBurgerPanel.classList.toggle('showPanel')
+  menuBurger.classList.toggle('switch-burger');
+  menuBurgerPanel.classList.toggle('show-panel')
 }
 
 
-const screen = {
-    small: 640,
-    medium: 768,
-    large: 1024
-  };
-
-window.addEventListener('resize', resizeHandler);
-resizeHandler();
-
 function resizeHandler() {
-  const iw = window.innerWidth;
-  let size = null;
-  for (let breakpoint in screen) {
-    if (iw >= screen[breakpoint]) size = breakpoint;
-  }
+  const largeScreen = 1024;
+  const windowWidth = window.innerWidth;
 
-  if (size !== 'large') {
+  if (windowWidth < largeScreen) {
     menuBurgerPanel.classList.add('panel')
     menuBurger.style.display = "block"
 
   } else {
     menuBurgerPanel.classList.remove('panel')
+    menuBurgerPanel.classList.remove('show-panel')
     menuBurger.style.display = "none"
-    menuBurgerPanel.classList.remove('showPanel')
-    menuBurger.classList.remove('switchBurger');
+    menuBurger.classList.remove('switch-burger');
   }
 }
+// Primera ejecución al abrir la página
+resizeHandler();

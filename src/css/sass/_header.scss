@@ -32,69 +32,70 @@ header {
       }
     }
     h1 {
-      font-size: 72px;
-      font-family: Helvetica, Arial, sans-serif;
-      padding-bottom: 10px;
       color: var(--blue-dark);
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 72px;
+      font-weight: 700;
+      padding-bottom: 10px;
       transition: transform 1s ease;
 
       span {
         background-color: var(--white);
-        border-radius: 16px;
+        border-radius: 30px;
         padding-bottom: 0.3rem;
       }
     }
   }
 
-  .menuBurger {
-    overflow: hidden;
+  .menu-burger {
     background-color: var(--blue-dark);
-    padding: 0.5rem;
     border-radius: 6px;
+    overflow: hidden;
+    padding: 0.5rem;
 
     &:hover {
       cursor: pointer;
     }
 
-    .burgerLine {
+    .burger-line {
+      fill: var(--green);
       height: 0.3rem;
       min-width: 2rem;
-      fill: var(--green);
       transition: transform 0.5s ease;
     }
   }
-  .switchBurger {
-    .burgerLine:nth-child(1) {
+  .switch-burger {
+    .burger-line:nth-child(1) {
       transform: rotate(45deg) scaleX(1.5) translateY(-2px);
     }
-    .burgerLine:nth-child(2) {
+    .burger-line:nth-child(2) {
       transform: translateX(13px) rotateY(90deg);
     }
-    .burgerLine:nth-child(3) {
+    .burger-line:nth-child(3) {
       transform: translate(-23px, 13px) rotate(-45deg) scaleX(1.5);
     }
   }
 
-  .navBar {
+  .nav-bar {
     display: flex;
     margin-right: 2rem;
 
     .panel {
-      position: absolute;
-      top: 5rem;
-      right: -500px;
-      flex-direction: column;
-      gap: 4rem;
       align-items: center;
       background-color: var(--white);
-      padding: 2rem;
       border-radius: 0 0 16px 16px;
-      border: 5px solid var(--yellow);
       border-top: none;
+      border: 5px solid var(--yellow);
+      flex-direction: column;
+      gap: 4rem;
+      padding: 2rem;
+      position: absolute;
+      right: -500px;
+      top: 5rem;
       transition: transform 0.5s;
     }
 
-    .showPanel {
+    .show-panel {
       transform: translateX(-512px);
     }
 
@@ -125,7 +126,7 @@ header {
   }
 }
 
-.headerOnScroll {
+.header-on-scroll {
   border-radius: 0;
   #logo {
     svg {
@@ -133,7 +134,7 @@ header {
     }
 
     h1 {
-      transform: scale(0.6) translateY(-20px) translateX(-120px);
+      transform: scale(0.6) translateY(-12px) translateX(-120px);
     }
   }
 }

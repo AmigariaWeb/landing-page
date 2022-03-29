@@ -1,10 +1,18 @@
 :root {
+  // Colors
   --blue-dark: #003a70;
   --blue-light: #007d8a;
   --green: #71cc98;
   --yellow: #f8e08e;
   --white: #fff;
+
+  // Breakpoints
+  --large-screen: "1024px";
+  --medium-screen: "768px";
+  --small-screen: "640px"
 }
+
+
 
 html,
 body,
@@ -99,7 +107,6 @@ body {
   line-height: 1;
 	background-color: var(--blue-dark);
   height: 100vh;
-	
 }
 ol,
 ul {
