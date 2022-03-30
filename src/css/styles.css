@@ -134,7 +134,7 @@ header {
   display: flex;
   height: 5rem;
   justify-content: flex-end;
-  position: fixed;
+  position: sticky;
   transition: border-radius 1s ease;
   width: 100vw;
   z-index: 2;
@@ -251,6 +251,76 @@ header .nav-bar ul .login {
 
 main {
   height: 120vh;
+}
+
+.aboutslogan {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+.aboutslogan .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 500px;
+  background-color: var(--blue-dark);
+  padding-left: 50px;
+}
+.aboutslogan .text {
+  color: var(--white);
+  font-size: 40px;
+  width: 92%;
+  padding-top: 10px;
+}
+.aboutslogan .bold {
+  font-weight: bold;
+  display: inline;
+}
+.aboutslogan svg {
+  padding-top: 50px;
+  width: 300px;
+  min-height: 40px;
+}
+.aboutslogan image {
+  width: inherit;
+  height: inherit;
+}
+.aboutslogan .slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 500px;
+  background-color: var(--yellow);
+  gap: 15px;
+  padding-left: 15px;
+}
+.aboutslogan .textslogan {
+  display: flex;
+  color: black;
+  align-content: center;
+  font-size: 50px;
+  width: 75%;
+  font-weight: bold;
+}
+.aboutslogan .button-access {
+  border-radius: 15px;
+  background-color: var(--blue-dark);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  width: 325px;
+  height: 45px;
+  margin-top: 50px;
+  text-decoration: none;
+  padding: 0.5rem 0.3rem;
+  align-content: center;
 }
 
 @font-face {

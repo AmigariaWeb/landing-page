@@ -5,7 +5,7 @@ header {
   display: flex;
   height: 5rem;
   justify-content: flex-end;
-  position: fixed;
+  position: sticky;
   transition: border-radius 1s ease;
   width: 100vw;
   z-index: 2;
