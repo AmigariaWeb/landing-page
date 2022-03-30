@@ -2,15 +2,3 @@
 @use './header';
 @use './main';
 @use './footer';
-
-@font-face {
-  font-family: "Josefin Sans" ;
-  src:url("../fonts/Josefin_Sans/static/JosefinSans-Regular.ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Josefin Sans" ;
-  src:url("../fonts/Josefin_Sans/static/JosefinSans-Bold.ttf");
-  font-weight: 700;
-}

@@ -12,7 +12,30 @@
   --small-screen: "640px"
 }
 
-
+@font-face {
+  font-family: 'Josefin Sans';
+  src:  url('../assets/fonts/JosefinSans-Regular/JosefinSans-Regular.woff') format('woff');
+  src:  url('../assets/fonts/JosefinSans-Regular/JosefinSans-Regular.eot') format('embedded-opentype'),
+        url('../assets/fonts/JosefinSans-Regular/JosefinSans-Regular.ttf') format('truetype'),
+        url('../assets/fonts/JosefinSans-Regular/JosefinSans-Regular.svg') format('svg');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  src:  url('../assets/fonts/JosefinSans-Bold/JosefinSans-Bold.woff') format('woff');
+  src:  url('../assets/fonts/JosefinSans-Bold/JosefinSans-Bold.eot') format('embedded-opentype'),
+        url('../assets/fonts/JosefinSans-Bold/JosefinSans-Bold.ttf') format('truetype'),
+        url('../assets/fonts/JosefinSans-Bold/JosefinSans-Bold.svg') format('svg');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Atkinson';
+  src:  url('../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.woff') format('woff');
+  src:  url('../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.eot'),
+        url('../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.ttf') format('truetype'),
+        url('../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.svg#webfont') format('svg');
+}
 
 html,
 body,
