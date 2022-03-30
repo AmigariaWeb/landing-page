@@ -64,7 +64,7 @@ footer {
   background-color: var(--blue-dark);
 }
 .footer-container {
-  max-width: 1024px;
+  max-width: 1440px;
   font-size: 36px;
   margin: auto;
   display: flex;
@@ -80,29 +80,41 @@ footer {
   align-self: center;
   text-align: center;
   padding: 16px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  flex: 1;
+}
+.footer-brand svg {
+  width: 50px;
+  height: 50px;
+}
+.footer-brand svg image {
+  height: 50px;
 }
 .footer-logo-title {
   font-size: 48px;
 }
 .footer-info {
+  min-width: 300px;
   padding: 8px 16px;
+  flex: 1;
+  text-align: center;
 }
 .footer-info--small {
-  font-size: 16px;
+  font-size: 12px;
 }
 .footer-info-developer {
   color: white;
   padding: 4px 8px;
-  border: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
   border-radius: 50px;
+  border-bottom-right-radius: 0px;
   margin: 8px 4px 0px 4px;
   text-align: center;
-  min-width: 100px;
-}
-.footer-info-developer:hover {
-  background-color: white;
-  color: var(--blue-dark);
-  border-color: var(--blue-dark);
+  min-width: 50px;
 }
 .footer-info-wrap {
   display: flex;
