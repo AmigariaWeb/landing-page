@@ -6,7 +6,7 @@
   --white: #fff;
   --large-screen: "1024px";
   --medium-screen: "768px";
-  --small-screen: "640px";
+  --small-screen: "640px" ;
 }
 
 @font-face {
@@ -15,20 +15,17 @@
   src: url("../assets/fonts/JosefinSans-Regular/JosefinSans-Regular.eot") format("embedded-opentype"), url("../assets/fonts/JosefinSans-Regular/JosefinSans-Regular.ttf") format("truetype"), url("../assets/fonts/JosefinSans-Regular/JosefinSans-Regular.svg") format("svg");
   font-weight: 400;
 }
-
 @font-face {
   font-family: "Josefin Sans";
   src: url("../assets/fonts/JosefinSans-Bold/JosefinSans-Bold.woff") format("woff");
   src: url("../assets/fonts/JosefinSans-Bold/JosefinSans-Bold.eot") format("embedded-opentype"), url("../assets/fonts/JosefinSans-Bold/JosefinSans-Bold.ttf") format("truetype"), url("../assets/fonts/JosefinSans-Bold/JosefinSans-Bold.svg") format("svg");
   font-weight: 700;
 }
-
 @font-face {
-  font-family: Atkinson;
+  font-family: "Atkinson";
   src: url("../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.woff") format("woff");
   src: url("../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.eot"), url("../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.ttf") format("truetype"), url("../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.svg#webfont") format("svg");
 }
-
 html,
 body,
 div,
@@ -114,10 +111,12 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 
 body {
+  overflow-x: hidden;
   line-height: 1;
   background-color: var(--blue-dark);
   height: 100vh;
@@ -133,10 +132,10 @@ q {
   quotes: none;
 }
 
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -153,12 +152,12 @@ header {
   display: flex;
   height: 5rem;
   justify-content: flex-end;
-  position: fixed;
+  padding-right: 1rem;
+  position: sticky;
   transition: border-radius 1s ease;
-  width: 100vw;
+  top: 0;
   z-index: 2;
 }
-
 header #logo {
   align-items: center;
   display: flex;
@@ -167,7 +166,6 @@ header #logo {
   top: 0;
   text-decoration: none;
 }
-
 header #logo svg {
   background-color: var(--white);
   border-radius: 50%;
@@ -176,12 +174,10 @@ header #logo svg {
   transition: transform 1s ease;
   width: 5.5em;
 }
-
 header #logo svg image {
   width: inherit;
   height: inherit;
 }
-
 header #logo h1 {
   color: var(--blue-dark);
   font-family: "Josefin Sans", sans-serif;
@@ -190,48 +186,38 @@ header #logo h1 {
   padding-bottom: 10px;
   transition: transform 1s ease;
 }
-
 header #logo h1 span {
   background-color: var(--white);
   border-radius: 30px;
   padding-bottom: 0.3rem;
 }
-
 header .menu-burger {
   background-color: var(--blue-dark);
   border-radius: 6px;
   overflow: hidden;
   padding: 0.5rem;
 }
-
 header .menu-burger:hover {
   cursor: pointer;
 }
-
 header .menu-burger .burger-line {
   fill: var(--green);
   height: 0.3rem;
   min-width: 2rem;
   transition: transform 0.5s ease;
 }
-
 header .switch-burger .burger-line:nth-child(1) {
   transform: rotate(45deg) scaleX(1.5) translateY(-2px);
 }
-
 header .switch-burger .burger-line:nth-child(2) {
   transform: translateX(13px) rotateY(90deg);
 }
-
 header .switch-burger .burger-line:nth-child(3) {
   transform: translate(-23px, 13px) rotate(-45deg) scaleX(1.5);
 }
-
 header .nav-bar {
   display: flex;
-  margin-right: 2rem;
 }
-
 header .nav-bar .panel {
   align-items: center;
   background-color: var(--white);
@@ -246,16 +232,13 @@ header .nav-bar .panel {
   top: 5rem;
   transition: transform 0.5s;
 }
-
 header .nav-bar .show-panel {
-  transform: translateX(-512px);
+  transform: translateX(-500px);
 }
-
 header .nav-bar ul {
   display: flex;
   gap: 1rem;
 }
-
 header .nav-bar ul .button-nav {
   border-radius: 16px;
   border: 4px solid var(--blue-dark);
@@ -266,11 +249,9 @@ header .nav-bar ul .button-nav {
   padding: 0.5rem 0.3rem;
   text-decoration: none;
 }
-
 header .nav-bar ul .button-nav:hover {
   color: var(--green);
 }
-
 header .nav-bar ul .login {
   background-color: var(--blue-dark);
   color: var(--white);
@@ -279,11 +260,9 @@ header .nav-bar ul .login {
 .header-on-scroll {
   border-radius: 0;
 }
-
 .header-on-scroll #logo svg {
   transform: scale(0.6) translateY(-25px);
 }
-
 .header-on-scroll #logo h1 {
   transform: scale(0.6) translateY(-12px) translateX(-120px);
 }
@@ -291,3 +270,5 @@ header .nav-bar ul .login {
 main {
   height: 120vh;
 }
+
+/*# sourceMappingURL=styles.css.map */

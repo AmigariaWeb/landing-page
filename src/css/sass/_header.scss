@@ -5,9 +5,10 @@ header {
   display: flex;
   height: 5rem;
   justify-content: flex-end;
-  position: fixed;
+  padding-right: 1rem;
+  position: sticky;
   transition: border-radius 1s ease;
-  width: 100vw;
+  top: 0;
   z-index: 2;
 
   #logo {
@@ -78,7 +79,6 @@ header {
 
   .nav-bar {
     display: flex;
-    margin-right: 2rem;
 
     .panel {
       align-items: center;
@@ -96,7 +96,7 @@ header {
     }
 
     .show-panel {
-      transform: translateX(-512px);
+      transform: translateX(-500px);
     }
 
     ul {
