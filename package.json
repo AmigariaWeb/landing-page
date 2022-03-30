@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "sass": "sass --poll --watch ./src/css/sass/styles.scss:./src/css/styles.css --update",
+    "styleint":"stylelint './src/css/styles.css' --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
