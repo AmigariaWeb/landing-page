@@ -23,8 +23,8 @@
 }
 @font-face {
   font-family: "Atkinson";
-  src: url("../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.woff") format("woff");
-  src: url("../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.eot"), url("../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.ttf") format("truetype"), url("../assets/fonts/atkinson_Hyperlegible/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.svg#webfont") format("svg");
+  src: url("../assets/fonts/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.woff") format("woff");
+  src: url("../assets/fonts/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.eot"), url("../assets/fonts/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.ttf") format("truetype"), url("../assets/fonts/atkinsonhyperlegible-regular/atkinsonhyperlegible-regular-webfont.svg#webfont") format("svg");
 }
 html,
 body,
@@ -119,7 +119,7 @@ body {
   overflow-x: hidden;
   line-height: 1;
   background-color: var(--blue-dark);
-  height: 100vh;
+  font-family: "Atkinson";
 }
 
 ol,
@@ -268,7 +268,7 @@ header .nav-bar ul .login {
 }
 
 main {
-  height: 120vh;
+  min-height: 120vh;
 }
 
 footer {
@@ -338,14 +338,14 @@ footer {
   align-items: center;
 }
 
-.aboutslogan {
+.about-slogan {
   background-color: white;
   width: 100%;
   height: 100%;
   display: flex;
   box-sizing: border-box;
 }
-.aboutslogan .about {
+.about-slogan .about {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -355,26 +355,26 @@ footer {
   background-color: var(--blue-dark);
   padding-left: 50px;
 }
-.aboutslogan .text {
+.about-slogan .text {
   color: var(--white);
   font-size: 40px;
   width: 92%;
   padding-top: 10px;
 }
-.aboutslogan .bold {
+.about-slogan .bold {
   font-weight: bold;
   display: inline;
 }
-.aboutslogan svg {
+.about-slogan svg {
   padding-top: 50px;
   width: 300px;
   min-height: 40px;
 }
-.aboutslogan image {
+.about-slogan image {
   width: inherit;
   height: inherit;
 }
-.aboutslogan .slogan {
+.about-slogan .slogan {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -385,7 +385,7 @@ footer {
   gap: 15px;
   padding-left: 15px;
 }
-.aboutslogan .textslogan {
+.about-slogan .text-slogan {
   display: flex;
   color: black;
   align-content: center;
@@ -393,7 +393,88 @@ footer {
   width: 75%;
   font-weight: bold;
 }
-.aboutslogan .button-access {
+.about-slogan .button-access {
+  border-radius: 15px;
+  background-color: var(--blue-dark);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  width: 325px;
+  height: 45px;
+  margin-top: 50px;
+  text-decoration: none;
+  padding: 0.5rem 0.3rem;
+  align-content: center;
+}
+
+.call-to-action-2 {
+  width: 100%;
+  height: 100%;
+  background-color: var(--green);
+}
+
+.text-int {
+  padding-top: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.type-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.options {
+  list-style: disc;
+  padding: 8%;
+}
+
+.user {
+  border-radius: 16px;
+  background-color: var(--white);
+  border: 10px solid var(--blue-dark);
+  color: var(--blue-dark);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  width: 350px;
+  height: 300px;
+  margin-top: 50px;
+  padding: 0.5rem 0.3rem;
+  margin-right: 10%;
+}
+
+.text-user {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.voluntaries {
+  border-radius: 16px;
+  background-color: var(--yellow);
+  border: 10px solid var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  width: 400px;
+  height: 300px;
+  margin-top: 50px;
+  padding: 0.5rem 0.3rem;
+}
+
+.access-webpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.button-access-web {
+  text-align: center;
+  margin-top: 10%;
   border-radius: 15px;
   background-color: var(--blue-dark);
   color: var(--white);
