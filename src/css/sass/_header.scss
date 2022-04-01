@@ -35,7 +35,7 @@ header {
     h1 {
       color: var(--blue-dark);
       font-family: "Josefin Sans", sans-serif;
-      font-size: 72px;
+      font-size:clamp(2rem, 8vw + 1rem, 4.5rem);
       font-weight: 700;
       padding-bottom: 10px;
       transition: transform 1s ease;
@@ -81,22 +81,25 @@ header {
     display: flex;
 
     .panel {
+      opacity: 0;
       align-items: center;
       background-color: var(--white);
-      border-radius: 0 0 16px 16px;
-      border-top: none;
-      border: 5px solid var(--yellow);
       flex-direction: column;
       gap: 4rem;
-      padding: 2rem;
+      padding-top: 8rem;
       position: absolute;
-      right: -500px;
-      top: 5rem;
-      transition: transform 0.5s;
+      right: 0;
+      top: 0;
+      transform: translateY(-100vh);
+      transition: opacity 0.5s, transform 0.5s;
+      min-height: 100vh;
+      min-width: 100vw;
+      z-index: -1;
     }
 
     .show-panel {
-      transform: translateX(-500px);
+      opacity: 1;
+      transform: translateY(0vh);
     }
 
     ul {

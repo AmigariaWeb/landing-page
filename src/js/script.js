@@ -28,7 +28,11 @@ function resizeHandler() {
   const windowWidth = window.innerWidth;
 
   if (windowWidth < largeScreen) {
-    menuBurgerPanel.classList.add('panel')
+    menuBurgerPanel.style.display = "none"
+    setTimeout(() => {
+      menuBurgerPanel.classList.add('panel')
+      menuBurgerPanel.style.display = "flex"
+    }, 1);
     menuBurger.style.display = "block"
 
   } else {
