@@ -4,9 +4,10 @@
   --green: #71cc98;
   --yellow: #f8e08e;
   --white: #fff;
-  --large-screen: "1024px";
-  --medium-screen: "768px";
-  --small-screen: "640px" ;
+  --extra-large-screen: 1280px;
+  --large-screen: 1024px;
+  --medium-screen: 768px;
+  --small-screen: 640px;
 }
 
 @font-face {
@@ -268,6 +269,11 @@ header .nav-bar ul .login {
 }
 .header-on-scroll #logo h1 {
   transform: scale(0.6) translateY(-12px) translateX(-120px);
+}
+
+.container {
+  max-width: var(--extra-large-screen);
+  margin: 0 auto;
 }
 
 main {
