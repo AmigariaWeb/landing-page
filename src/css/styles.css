@@ -118,6 +118,7 @@ video {
 }
 
 body {
+  box-sizing: border-box;
   overflow-x: hidden;
   line-height: 1;
   background-color: var(--blue-dark);
@@ -336,6 +337,7 @@ footer {
   padding: 4px 8px;
   margin: 8px 4px 0px 4px;
   text-align: center;
+  flex: 1;
 }
 .footer-info-developer-team {
   color: white;
@@ -348,9 +350,13 @@ footer {
 }
 .footer-info-developer p {
   margin: 8px;
-  transform: translateY(48px) scale(0.5);
+  transform: translateX(0%) translateY(48px) scale(0.5);
   opacity: 0;
   transition: all 1s ease-in-out;
+  min-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .footer-info-developer img {
   height: 48px;
@@ -359,7 +365,7 @@ footer {
 }
 .footer-info-developer:hover p {
   opacity: 1;
-  transform: translateY(0px) scale(1);
+  transform: translateX(0%) translateY(0px) scale(1);
 }
 .footer-info-wrap {
   display: flex;
