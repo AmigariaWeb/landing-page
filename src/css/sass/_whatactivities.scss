@@ -1,0 +1,111 @@
+.whatactivities {
+  background-color: var(--green);
+  font-size: 48px;
+  font-family: 'Atkinson';
+  color: var(--blue-dark);
+  line-height: 70px;
+
+  &-container {
+    display: grid;
+    grid-template-areas:
+      'text-left text-right'
+      'postit postit';
+    padding: 50px;
+    justify-content: center;
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  &-texts-left {
+
+    grid-area: text-left;
+    max-width: 28.125rem;
+    text-align: center; 
+  }
+
+  &-texts-right {
+
+    grid-area: text-right;
+    max-width: 37.5rem;
+    text-align: right;
+    justify-self: end;
+  }
+
+  &-postits {
+    grid-area: postit;
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  &-postit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+
+    .postit {
+      background-color: var(--yellow);
+      max-width: 400px;
+      width: 95vw;
+      height: 400px;
+
+      &_small {
+        max-width: 200px;
+        height: 200px;
+      }
+      &_medium {
+        max-width: 226px;
+        height: 226px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &-container {
+      gap: 2rem;
+      grid-template-areas:
+      'text-left'
+      'postit'
+      'text-right';
+    }
+
+    &-postit-container {
+      max-width: 400px;
+      width: 85vw;
+    }
+    &-postit-container:not(.whatactivities-postit-container:nth-child(3)) {
+      display: none;
+    }
+
+    &-texts-left {
+      top: 0;
+      justify-self: center;
+
+    }
+    &-texts-right {
+      text-align: center;
+      top: 0;
+    }
+  }
+
+  @media (min-width: 1440px) {
+
+    &-texts-left {
+      position: relative;
+      top: 120px;
+
+    }
+
+    &-texts-right {
+      position: relative;
+      top: 120px;
+    }
+  }
+}
