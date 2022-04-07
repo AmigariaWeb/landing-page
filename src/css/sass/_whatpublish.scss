@@ -1,0 +1,65 @@
+.whatpublish{
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding:80px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    
+    &-postit{
+    background-color: white;
+    min-height: 460px;
+    min-width: 460px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        &-body{
+            height: 400px;
+            width: 400px;
+            background-color: var(--yellow);
+        };
+        &-title{
+            font-family: 'Atkinson';
+            font-size: 36px;
+            line-height: 63px;
+            font-weight: bold;
+            color: var(--blue-dark);
+            text-align: center;
+        };
+        &-description{
+            font-family: 'Atkinson';
+            font-size: 20px;
+            line-height: 35px;
+            font-weight: 400;
+            color: var(--blue-dark);
+            text-align: center;
+        };
+    };
+    &-info{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 660px;
+        &-title{
+            font-family: 'Atkinson';
+            font-size: 48px;
+            line-height: 72px;
+            font-weight: 400;
+            color: var(--blue-dark);
+            text-align: center;
+        };
+        &-description{
+            background-color: white;
+            border-radius: 40px;
+            font-family: 'Atkinson';
+            font-size: 36px;
+            line-height: 63px;
+            font-weight: 400;
+            color: var(--blue-dark);
+            text-align: center;
+        };
+    }
+}
