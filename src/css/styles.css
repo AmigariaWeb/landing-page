@@ -3,6 +3,7 @@
   --blue-dark-shadow: #002140;
   --blue-light: #007d8a;
   --green: #71cc98;
+  --yellow-dark: #E5C34D;
   --yellow: #f8e08e;
   --white: #fff;
   --extra-large-screen: 1440px;
@@ -389,13 +390,20 @@ header .nav-bar ul .login {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 10px 10px 0px #00000026;
 }
 .whatpublish-postit-body {
   height: 400px;
   width: 400px;
   background-color: var(--yellow);
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 95% 91%, 89% 94%, 83% 96%, 75% 98%, 68% 99%, 57% 100%, 0 100%);
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 .whatpublish-postit-title {
+  margin-top: 10px;
   font-family: "Atkinson";
   font-size: 36px;
   line-height: 63px;
@@ -410,6 +418,24 @@ header .nav-bar ul .login {
   font-weight: 400;
   color: var(--blue-dark);
   text-align: center;
+}
+.whatpublish-postit-description-info-container {
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px 40px;
+}
+.whatpublish-postit-description-info-details {
+  font-family: "Atkinson";
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 400;
+  color: var(--blue-dark);
+  text-align: center;
+}
+.whatpublish-postit-corner {
+  height: 1000px;
+  width: 1050px;
+  color: var(--yellow-dark);
 }
 .whatpublish-info {
   display: flex;
@@ -427,6 +453,7 @@ header .nav-bar ul .login {
 }
 .whatpublish-info-description {
   background-color: white;
+  padding: 10px 40px;
   border-radius: 40px;
   font-family: "Atkinson";
   font-size: 36px;
@@ -434,6 +461,7 @@ header .nav-bar ul .login {
   font-weight: 400;
   color: var(--blue-dark);
   text-align: center;
+  box-shadow: 10px 10px 0px #00000026;
 }
 
 .call-to-action-2 {
