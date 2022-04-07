@@ -9,6 +9,7 @@
   --large-screen: 1024px;
   --medium-screen: 768px;
   --small-screen: 640px;
+  --shadow:10px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
 @font-face {
@@ -146,6 +147,28 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.subline {
+  position: relative;
+}
+.subline::after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 150px;
+  border-radius: 50px;
+  background-color: #71cc98;
+}
+.subline--dash::after, .subline--dashed::after {
+  height: 3px;
+  width: 10px;
+  border-radius: 50px;
+  background-color: #71cc98;
+  box-shadow: -52px 0px 0px #71cc98, -35px 0px 0px #71cc98, -17px 0px 0px #71cc98, 0px 0px 0px #71cc98, 17px 0px 0px #71cc98, 35px 0px 0px #71cc98, 52px 0px 0px #71cc98;
 }
 
 header {
