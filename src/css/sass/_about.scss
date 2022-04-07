@@ -4,12 +4,14 @@
     height: 100%;
     display: flex;
     box-sizing: border-box;
+    flex-wrap: wrap;
     
     .about {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        flex: 1;
         width: 60%;
         height: 500px;
         background-color: var(--blue-dark);
@@ -19,7 +21,7 @@
     .text {
         color: var(--white);
         font-size: 40px;
-        width: 92%;
+        /*width: 92%;*/
         padding-top: 10px;
     }
     .bold{
@@ -43,6 +45,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        flex: 1;
         width: 40%;
         height: 500px;
         background-color: var(--yellow);
