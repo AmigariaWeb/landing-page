@@ -591,4 +591,43 @@ footer {
   align-content: center;
 }
 
+.why {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1440px;
+  background: #71cc98;
+  padding: 60px 80px;
+}
+.why-card {
+  background-color: #fff;
+  color: #003a70;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  align-items: center;
+  border-radius: 40px;
+  margin: 0.5rem 1rem;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.why-card-img {
+  width: 2rem;
+  margin-top: 1rem;
+}
+.why-card-title {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.why-card-hr {
+  width: 150px;
+  border-top: 2px dashed #71cc98;
+}
+.why-card-p {
+  margin: 1rem 2rem 2rem 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
