@@ -253,54 +253,57 @@ main {
   height: 120vh;
 }
 
-.aboutslogan {
+.about-slogan {
   background-color: white;
   width: 100%;
   height: 100%;
   display: flex;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
-.aboutslogan .about {
+.about-slogan .about {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 60%;
+  flex: 1;
+  max-width: 60%;
   height: 500px;
-  background-color: var(--blue-dark);
+  background-color: var(--white);
   padding-left: 50px;
 }
-.aboutslogan .text {
-  color: var(--white);
+.about-slogan .text {
+  color: var(--blue-dark);
   font-size: 40px;
-  width: 92%;
+  /*width: 92%;*/
   padding-top: 10px;
 }
-.aboutslogan .bold {
+.about-slogan .bold {
   font-weight: bold;
   display: inline;
 }
-.aboutslogan svg {
+.about-slogan svg {
   padding-top: 50px;
   width: 300px;
   min-height: 40px;
 }
-.aboutslogan image {
+.about-slogan image {
   width: inherit;
   height: inherit;
 }
-.aboutslogan .slogan {
+.about-slogan .slogan {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 1;
   width: 40%;
   height: 500px;
   background-color: var(--yellow);
   gap: 15px;
   padding-left: 15px;
 }
-.aboutslogan .textslogan {
+.about-slogan .text-slogan {
   display: flex;
   color: black;
   align-content: center;
@@ -308,7 +311,7 @@ main {
   width: 75%;
   font-weight: bold;
 }
-.aboutslogan .button-access {
+.about-slogan .button-access {
   border-radius: 15px;
   background-color: var(--blue-dark);
   color: var(--white);
@@ -321,6 +324,7 @@ main {
   text-decoration: none;
   padding: 0.5rem 0.3rem;
   align-content: center;
+  box-shadow: var(--shadow);
 }
 
 @font-face {
