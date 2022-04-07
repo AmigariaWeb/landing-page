@@ -428,6 +428,7 @@ footer {
   display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 .about-slogan .about {
   display: flex;
@@ -435,16 +436,22 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex: 1;
-  width: 60%;
-  height: 500px;
-  background-color: var(--blue-dark);
-  padding-left: 50px;
+  /*width: 60%;
+  /*height: 500px;*/
+  padding: 50px;
+  background-color: var(--white);
+}
+@media screen and (max-width: 640px) {
+  .about-slogan .about {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 .about-slogan .text {
-  color: var(--white);
+  color: var(--blue-dark);
   font-size: 40px;
   /*width: 92%;*/
-  padding-top: 10px;
+  padding-top: 50px;
 }
 .about-slogan .bold {
   font-weight: bold;
@@ -465,11 +472,17 @@ footer {
   align-items: center;
   justify-content: center;
   flex: 1;
-  width: 40%;
-  height: 500px;
+  /*width: 40%;
+  height: 500px;*/
   background-color: var(--yellow);
   gap: 15px;
-  padding-left: 15px;
+  padding: 50px;
+}
+@media screen and (max-width: 640px) {
+  .about-slogan .slogan {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 .about-slogan .text-slogan {
   display: flex;
@@ -492,6 +505,7 @@ footer {
   text-decoration: none;
   padding: 0.5rem 0.3rem;
   align-content: center;
+  box-shadow: var(--shadow);
 }
 
 .call-to-action-2 {
