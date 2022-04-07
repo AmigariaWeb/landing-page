@@ -20,8 +20,9 @@
     box-shadow: 10px 10px 0px #00000026;
 
     &-img {
-      width: 2rem;
-      margin-top: 1rem;
+      width: 3rem;
+      margin: 30px;
+
     }
 
     &-title {
@@ -31,13 +32,9 @@
       text-align: center;
     }
 
-    &-hr {
-      width: 150px;
-      border-top: 2px dashed #71cc98;
-    }
-
     &-p {
-      margin: 1rem 2rem 2rem 2rem;
+      margin: 30px;
+      text-align: center;
       font-size: 20px;
       line-height: 35px;
     }

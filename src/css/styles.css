@@ -161,14 +161,14 @@ table {
   height: 3px;
   width: 150px;
   border-radius: 50px;
-  background-color: #71cc98;
+  background-color: #f8e08e;
 }
 .subline--dash::after, .subline--dashed::after {
   height: 3px;
   width: 10px;
   border-radius: 50px;
-  background-color: #71cc98;
-  box-shadow: -52px 0px 0px #71cc98, -35px 0px 0px #71cc98, -17px 0px 0px #71cc98, 0px 0px 0px #71cc98, 17px 0px 0px #71cc98, 35px 0px 0px #71cc98, 52px 0px 0px #71cc98;
+  background-color: #f8e08e;
+  box-shadow: -52px 0px 0px #f8e08e, -35px 0px 0px #f8e08e, -17px 0px 0px #f8e08e, 0px 0px 0px #f8e08e, 17px 0px 0px #f8e08e, 35px 0px 0px #f8e08e, 52px 0px 0px #f8e08e;
 }
 
 header {
@@ -613,8 +613,8 @@ footer {
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .why-card-img {
-  width: 2rem;
-  margin-top: 1rem;
+  width: 3rem;
+  margin: 30px;
 }
 .why-card-title {
   margin-left: 1rem;
@@ -622,12 +622,9 @@ footer {
   font-size: 36px;
   text-align: center;
 }
-.why-card-hr {
-  width: 150px;
-  border-top: 2px dashed #71cc98;
-}
 .why-card-p {
-  margin: 1rem 2rem 2rem 2rem;
+  margin: 30px;
+  text-align: center;
   font-size: 20px;
   line-height: 35px;
 }
