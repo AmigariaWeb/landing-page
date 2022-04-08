@@ -457,7 +457,7 @@ header .nav-bar ul .login {
     transform: translateY(120px);
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
   .whatactivities-postit-container:first-child {
     display: none;
   }
