@@ -604,12 +604,12 @@ footer {
   color: #003a70;
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 26vw;
   align-items: center;
   border-radius: 40px;
   margin: 0.5rem 1rem;
-  min-width: 250px;
-  max-width: 300px;
+  min-width: 320px;
+  max-width: 370px;
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .why-card-img {
@@ -619,7 +619,7 @@ footer {
 .why-card-title {
   margin-left: 1rem;
   margin-right: 1rem;
-  font-size: 2rem;
+  font-size: 36px;
   text-align: center;
 }
 .why-card-hr {
@@ -628,6 +628,8 @@ footer {
 }
 .why-card-p {
   margin: 1rem 2rem 2rem 2rem;
+  font-size: 20px;
+  line-height: 35px;
 }
 
 /*# sourceMappingURL=styles.css.map */
