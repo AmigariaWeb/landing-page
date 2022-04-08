@@ -172,6 +172,40 @@ table {
   box-shadow: -52px 0px 0px #71cc98, -35px 0px 0px #71cc98, -17px 0px 0px #71cc98, 0px 0px 0px #71cc98, 17px 0px 0px #71cc98, 35px 0px 0px #71cc98, 52px 0px 0px #71cc98;
 }
 
+.postit {
+  border: solid 30px white;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+.postit::before {
+  height: 15%;
+  width: 50%;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: -1px;
+  display: flex;
+  background-color: white;
+  clip-path: polygon(100% 44%, 100% 100%, 0% 100%, 43% 95.5%, 63% 84.5%, 77% 73%, 90% 60%);
+}
+.postit::after {
+  height: 15%;
+  width: 50%;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: -1px;
+  display: flex;
+  background-color: #00000033;
+  mix-blend-mode: multiply;
+  clip-path: polygon(88% 0%, 93% 11%, 97.5% 27%, 100% 44%, 90% 60%, 77% 73%, 63% 84.5%, 43% 95.5%, 0% 100%, 31% 91%, 50% 75.5%, 63.5% 58%, 76% 35.5%, 84% 15.5%);
+}
+
 header {
   align-items: center;
   background-color: var(--white);
@@ -381,69 +415,43 @@ header .nav-bar ul .login {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  /*
-  &-postit{
-  background-color: white;
-  min-height: 460px;
-  min-width: 460px;
-  border-radius: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow :(10px 10px 0px #00000026);
-      &-body{
-          height: 400px;
-          width: 400px;
-          background-color: var(--yellow);
-          clip-path: polygon(0 0, 100% 0, 100% 87%, 95% 91%, 89% 94%, 83% 96%, 75% 98%, 68% 99%, 57% 100%, 0 100%);
-          display: flex;
-          gap: 30px;
-          flex-direction: column;
-          align-items: center;
-      };
-      &-title{
-          margin-top: 10px;
-          font-family: 'Atkinson';
-          font-size: 36px;
-          line-height: 63px;
-          font-weight: bold;
-          color: var(--blue-dark);
-          text-align: center;
-      };
-      &-description{
-          font-family: 'Atkinson';
-          font-size: 20px;
-          line-height: 35px;
-          font-weight: 400;
-          color: var(--blue-dark);
-          text-align: center;
-          &-info-container{
-              background-color: white;
-              border-radius: 30px;
-              padding: 10px 40px;
-          };
-          &-info-details{
-              font-family: 'Atkinson';
-              font-size: 20px;
-              line-height: 35px;
-              font-weight: 400;
-              color: var(--blue-dark);
-              text-align: center;
-          };
-      };
-      &-corner{
-          height: 1000px;
-          width: 1050px;
-          color: var(--yellow-dark);
-      };
-  };
-  */
 }
-.whatpublish-postit {
-  height: 400px;
+.whatpublish-item {
   width: 400px;
+  background-color: var(--yellow);
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.whatpublish-title {
+  margin-top: 10px;
+  font-family: "Atkinson";
+  font-size: 36px;
+  line-height: 63px;
+  font-weight: bold;
+  color: var(--blue-dark);
+}
+.whatpublish-description {
+  font-family: "Atkinson";
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 400;
+  color: var(--blue-dark);
+  text-align: center;
+}
+.whatpublish-description-info-container {
   background-color: white;
-  border-radius: 20px;
+  border-radius: 30px;
+  padding: 10px 40px;
+  max-width: 350px;
+}
+.whatpublish-description-info-details {
+  font-family: "Atkinson";
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 400;
+  color: var(--blue-dark);
+  text-align: center;
 }
 .whatpublish-info {
   display: flex;
