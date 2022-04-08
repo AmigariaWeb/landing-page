@@ -18,18 +18,19 @@
   }
 
   &-texts-left {
-
     grid-area: text-left;
     max-width: 28.125rem;
-    text-align: center; 
+    text-align: center;
+    transition: transform 0.5s;
+
   }
 
   &-texts-right {
-
     grid-area: text-right;
     max-width: 37.5rem;
     text-align: right;
     justify-self: end;
+    transition: transform 0.5s;
   }
 
   &-postits {
@@ -71,9 +72,9 @@
     &-container {
       gap: 2rem;
       grid-template-areas:
-      'text-left'
-      'postit'
-      'text-right';
+        'text-left'
+        'postit'
+        'text-right';
     }
 
     &-postit-container {
@@ -87,8 +88,8 @@
     &-texts-left {
       top: 0;
       justify-self: center;
-
     }
+
     &-texts-right {
       text-align: center;
       top: 0;
@@ -96,16 +97,14 @@
   }
 
   @media (min-width: 1440px) {
-
-    &-texts-left {
-      position: relative;
-      top: 120px;
-
-    }
-
+    &-texts-left,
     &-texts-right {
-      position: relative;
-      top: 120px;
+      transform: translateY(120px);
+    }
+  }
+  @media (max-width: 1440px) {
+    &-postit-container:first-child {
+      display: none;
     }
   }
 }

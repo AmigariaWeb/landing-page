@@ -391,12 +391,14 @@ header .nav-bar ul .login {
   grid-area: text-left;
   max-width: 28.125rem;
   text-align: center;
+  transition: transform 0.5s;
 }
 .whatactivities-texts-right {
   grid-area: text-right;
   max-width: 37.5rem;
   text-align: right;
   justify-self: end;
+  transition: transform 0.5s;
 }
 .whatactivities-postits {
   grid-area: postit;
@@ -451,13 +453,13 @@ header .nav-bar ul .login {
   }
 }
 @media (min-width: 1440px) {
-  .whatactivities-texts-left {
-    position: relative;
-    top: 120px;
+  .whatactivities-texts-left, .whatactivities-texts-right {
+    transform: translateY(120px);
   }
-  .whatactivities-texts-right {
-    position: relative;
-    top: 120px;
+}
+@media (max-width: 1440px) {
+  .whatactivities-postit-container:first-child {
+    display: none;
   }
 }
 
