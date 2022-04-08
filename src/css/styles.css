@@ -374,36 +374,29 @@ header .nav-bar ul .login {
   line-height: 70px;
 }
 .whatactivities-container {
-  display: grid;
-  grid-template-areas: "text-left text-right" "postit postit";
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
   padding: 50px;
-  justify-content: center;
+  justify-content: space-between;
+  min-height: 37.5rem;
 }
 .whatactivities-container strong {
   font-weight: 700;
 }
-.whatactivities-texts-left {
-  grid-area: text-left;
-  max-width: 28.125rem;
+.whatactivities-texts {
   text-align: center;
-  transition: transform 0.5s;
-}
-.whatactivities-texts-right {
-  grid-area: text-right;
-  max-width: 37.5rem;
-  text-align: right;
-  justify-self: end;
-  transition: transform 0.5s;
 }
 .whatactivities-postits {
-  grid-area: postit;
   display: flex;
-  gap: 26px;
   justify-content: center;
-  align-items: flex-end;
-  flex-wrap: wrap;
+  min-height: 30rem;
+  align-items: center;
 }
 .whatactivities-postit-container {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,48 +405,31 @@ header .nav-bar ul .login {
   box-shadow: var(--shadow);
   padding: 20px;
 }
+.whatactivities-postit-container:nth-child(1) {
+  margin-right: clamp(0%, 45vw + 5%, 40%);
+}
+.whatactivities-postit-container:nth-child(2) {
+  margin-right: clamp(0%, 25vw + 5%, 30%);
+}
+.whatactivities-postit-container:nth-child(3) {
+  margin-left: clamp(0%, 25vw + 5%, 30%);
+}
 .whatactivities-postit-container .postit {
   background-color: var(--yellow);
   max-width: 400px;
   width: 95vw;
-  height: 400px;
+  min-height: 400px;
 }
 .whatactivities-postit-container .postit_small {
   max-width: 200px;
-  height: 200px;
+  min-height: 200px;
 }
 .whatactivities-postit-container .postit_medium {
   max-width: 226px;
-  height: 226px;
+  min-height: 226px;
 }
-@media (max-width: 1024px) {
-  .whatactivities-container {
-    gap: 2rem;
-    grid-template-areas: "text-left" "postit" "text-right";
-  }
-  .whatactivities-postit-container {
-    max-width: 400px;
-    width: 85vw;
-  }
-  .whatactivities-postit-container:not(.whatactivities-postit-container:nth-child(3)) {
-    display: none;
-  }
-  .whatactivities-texts-left {
-    top: 0;
-    justify-self: center;
-  }
-  .whatactivities-texts-right {
-    text-align: center;
-    top: 0;
-  }
-}
-@media (min-width: 1440px) {
-  .whatactivities-texts-left, .whatactivities-texts-right {
-    transform: translateY(120px);
-  }
-}
-@media (max-width: 1439px) {
-  .whatactivities-postit-container:first-child {
+@media (max-width: 480px) {
+  .whatactivities-postit-container:not(.whatactivities-postit-container:last-child) {
     display: none;
   }
 }

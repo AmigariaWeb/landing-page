@@ -6,43 +6,32 @@
   line-height: 70px;
 
   &-container {
-    display: grid;
-    grid-template-areas:
-      'text-left text-right'
-      'postit postit';
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
     padding: 50px;
-    justify-content: center;
+    justify-content: space-between;
+    min-height: 37.5rem;
     strong {
       font-weight: 700;
     }
   }
 
-  &-texts-left {
-    grid-area: text-left;
-    max-width: 28.125rem;
+  &-texts {
     text-align: center;
-    transition: transform 0.5s;
-
-  }
-
-  &-texts-right {
-    grid-area: text-right;
-    max-width: 37.5rem;
-    text-align: right;
-    justify-self: end;
-    transition: transform 0.5s;
   }
 
   &-postits {
-    grid-area: postit;
     display: flex;
-    gap: 26px;
     justify-content: center;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    min-height: 30rem;
+    align-items: center;
   }
 
   &-postit-container {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,59 +40,35 @@
     box-shadow: var(--shadow);
     padding: 20px;
 
+    &:nth-child(1){
+      margin-right: clamp(0%, 45vw + 5%, 40%);
+    }
+    &:nth-child(2){
+      margin-right: clamp(0%, 25vw + 5%, 30%);
+    }
+    &:nth-child(3){
+      margin-left: clamp(0%, 25vw + 5%, 30%);
+    }
+
     .postit {
       background-color: var(--yellow);
       max-width: 400px;
       width: 95vw;
-      height: 400px;
+      min-height: 400px;
 
       &_small {
         max-width: 200px;
-        height: 200px;
+        min-height: 200px;
       }
       &_medium {
         max-width: 226px;
-        height: 226px;
+        min-height: 226px;
       }
     }
   }
 
-  @media (max-width: 1024px) {
-    &-container {
-      gap: 2rem;
-      grid-template-areas:
-        'text-left'
-        'postit'
-        'text-right';
-    }
-
-    &-postit-container {
-      max-width: 400px;
-      width: 85vw;
-    }
-    &-postit-container:not(.whatactivities-postit-container:nth-child(3)) {
-      display: none;
-    }
-
-    &-texts-left {
-      top: 0;
-      justify-self: center;
-    }
-
-    &-texts-right {
-      text-align: center;
-      top: 0;
-    }
-  }
-
-  @media (min-width: 1440px) {
-    &-texts-left,
-    &-texts-right {
-      transform: translateY(120px);
-    }
-  }
-  @media (max-width: 1439px) {
-    &-postit-container:first-child {
+  @media (max-width:480px) {
+    &-postit-container:not(.whatactivities-postit-container:last-child) {
       display: none;
     }
   }
