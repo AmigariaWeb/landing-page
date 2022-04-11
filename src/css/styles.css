@@ -171,6 +171,10 @@ table {
   box-shadow: -52px 0px 0px #f8e08e, -35px 0px 0px #f8e08e, -17px 0px 0px #f8e08e, 0px 0px 0px #f8e08e, 17px 0px 0px #f8e08e, 35px 0px 0px #f8e08e, 52px 0px 0px #f8e08e;
 }
 
+strong {
+  font-weight: bold;
+}
+
 header {
   align-items: center;
   background-color: var(--white);
