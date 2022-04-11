@@ -426,6 +426,9 @@ header .nav-bar ul .login {
   flex-wrap: nowrap;
   flex-wrap: wrap;
 }
+.call2action-contact form {
+  width: 100%;
+}
 .call2action-title {
   font-style: normal;
   font-weight: 700;
@@ -440,7 +443,9 @@ header .nav-bar ul .login {
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
-  min-width: 405px;
+  max-width: 405px;
+  width: 100%;
+  margin: auto;
 }
 .call2action-group__label {
   font-style: normal;

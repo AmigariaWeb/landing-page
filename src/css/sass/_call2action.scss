@@ -39,6 +39,9 @@
         flex-flow: column;
         flex-wrap: nowrap;
         flex-wrap: wrap;
+        form{
+            width: 100%;
+        }
     }
     &-title{
         font-style: normal;
@@ -54,7 +57,9 @@
         display: flex;
         flex-flow: column;
         flex-wrap: wrap;
-        min-width: 405px;
+        max-width: 405px;
+        width: 100%;
+        margin: auto;
         &__label{
             font-style: normal;
             font-weight: 700;
