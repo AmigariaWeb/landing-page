@@ -52,28 +52,32 @@
           <a href="#" class="button-access">Quiero Participar</a>
         </div>
       </section>
-      <section class="call-to-action-2">
-        <h2 class="text-int">¿Te apuntas?</h2>
-        <div class="type-user">
-          <div class="user">
-            <h3 class="text-user">Como Usuario</h3>
-            <ul class="options">
-              <li>Solicitar ayuda</li>
-              <li>Apuntarse a talleres</li>
-            </ul>
+      <section class="call2action-wrap">
+          <div class="call2action-info">
+            <p>
+              No aceptamos en nuestros términos un soporte de cuidados
+            </p>
+            <p>
+              personales, <strong>los servicios</strong> prestados por nuestros voluntarios
+            </p>
+            <p>
+              <strong>son méramente sociales.</strong>
+            </p>
           </div>
-          <div class="voluntaries">
-            <h3 class="text-user">Como Voluntario</h3>
-            <ul class="options">
-              <li>Crear tickets?</li>
-              <li>Asignarse tickets</li>
-              <li>¿Crear talleres?</li>
-            </ul>
+          <div class="call2action-contact">
+            <h2 class="call2action-title">¿Te apuntas?</h2>
+            <form id="c2a-landing" action="" method="post">
+              <div class="call2action-group inputControl">
+                <label class="call2action-group__label" for="c2a-name">Nombre: <span class="error"></span></label>
+                <input class="call2action-group__input" type="text" name="c2a-name" id="c2a-name" require d autocomplete="off" data-validation="username">
+              </div>
+              <div class="call2action-group inputControl">
+                <label class="call2action-group__label" for="c2a-email">Email: <span class="error"></span></label>
+                <input class="call2action-group__input" type="email" name="c2a-email" id="c2a-email" require d autocomplete="off" data-validation="email">
+              </div>
+              <input class="call2action-group__submit" type="submit" value="Enviar">
+            </form>
           </div>
-        </div>
-        <div class="access-webpage">
-          <a href="#" class="button-access-web">¡ÚNETE!</a>
-        </div>
       </section>
     </main>
     <footer>
