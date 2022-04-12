@@ -327,19 +327,11 @@ header .nav-bar ul .login {
   font-size: 40px;
   /*width: 92%;*/
   padding-top: 50px;
+  text-align: center;
 }
 .about-slogan .bold {
   font-weight: bold;
   display: inline;
-}
-.about-slogan svg {
-  padding-top: 50px;
-  width: 300px;
-  min-height: 40px;
-}
-.about-slogan image {
-  width: inherit;
-  height: inherit;
 }
 .about-slogan .slogan {
   display: flex;
@@ -366,6 +358,7 @@ header .nav-bar ul .login {
   font-size: 50px;
   width: 75%;
   font-weight: bold;
+  text-align: center;
 }
 .about-slogan .button-access {
   border-radius: 15px;
