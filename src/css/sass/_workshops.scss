@@ -11,6 +11,8 @@
 
     &-half {
       display: flex;
+      width: 100%;
+      min-width: 500px;
       flex: 1;
       flex-wrap: wrap;
       flex-direction: column;
@@ -18,6 +20,7 @@
       @media (max-width: 1024px) {
         &:last-child{
           flex-direction: column-reverse;
+          width: 100%;
         }
       }
       justify-content: center;

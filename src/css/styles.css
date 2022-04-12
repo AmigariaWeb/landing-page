@@ -985,6 +985,8 @@ footer {
 }
 .workshops-section-half {
   display: flex;
+  width: 100%;
+  min-width: 500px;
   flex: 1;
   flex-wrap: wrap;
   flex-direction: column;
@@ -994,6 +996,7 @@ footer {
 @media (max-width: 1024px) {
   .workshops-section-half:last-child {
     flex-direction: column-reverse;
+    width: 100%;
   }
 }
 .workshops-section p {
