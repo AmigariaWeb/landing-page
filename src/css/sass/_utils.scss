@@ -2,7 +2,7 @@
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 120%;
     left: 50%;
@@ -20,13 +20,9 @@
       width: 10px;
       border-radius: 50px;
       background-color: #f8e08e;
-      box-shadow: -52px 0px 0px #f8e08e,
-        -35px 0px 0px #f8e08e,
-        -17px 0px 0px #f8e08e,
-        00px 0px 0px #f8e08e,
-        17px 0px 0px #f8e08e,
-        35px 0px 0px #f8e08e,
-        52px 0px 0px #f8e08e;
+      box-shadow: -52px 0px 0px #f8e08e, -35px 0px 0px #f8e08e,
+        -17px 0px 0px #f8e08e, 00px 0px 0px #f8e08e, 17px 0px 0px #f8e08e,
+        35px 0px 0px #f8e08e, 52px 0px 0px #f8e08e;
     }
   }
 }
@@ -34,36 +30,59 @@
 strong {
   font-weight: bold;
 }
-.postit{
-        border: solid 30px white;
-        background-color: white;
-        border-radius: 30px;
-        box-shadow: var(--shadow);
-        position: relative;
-        display: flex;
-        overflow: hidden;
-        aspect-ratio: 1 / 1;
-        &::before{
-          height: 15%;
-          width: 50%;
-          content:"";
-          position: absolute;
-          bottom: 0px;
-          right: -1px;
-          display: flex;
-          background-color: white;
-          clip-path: polygon(100% 44%, 100% 100%, 0% 100%, 43% 95.5%, 63% 84.5%, 77% 73%, 90% 60%,);
-        }
-        &::after{
-          height: 15%;
-          width: 50%;
-          content:"";
-          position: absolute;
-          bottom: 0px;
-          right: -1px;
-          display: flex;
-          background-color: #00000033;
-          mix-blend-mode: multiply;
-          clip-path: polygon(88% 0%, 93% 11%, 97.5% 27%, 100% 44%, 90% 60%, 77% 73%, 63% 84.5%, 43% 95.5%, 0% 100%, 31% 91%, 50% 75.5%, 63.5% 58%, 76% 35.5%, 84% 15.5%);
-        }
-    }
+.postit {
+  border: solid 30px white;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  &::before {
+    height: 15%;
+    width: 50%;
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: -1px;
+    display: flex;
+    background-color: white;
+    clip-path: polygon(
+      100% 44%,
+      100% 100%,
+      0% 100%,
+      43% 95.5%,
+      63% 84.5%,
+      77% 73%,
+      90% 60%
+    );
+  }
+  &::after {
+    height: 15%;
+    width: 50%;
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: -1px;
+    display: flex;
+    background-color: #00000033;
+    mix-blend-mode: multiply;
+    clip-path: polygon(
+      88% 0%,
+      93% 11%,
+      97.5% 27%,
+      100% 44%,
+      90% 60%,
+      77% 73%,
+      63% 84.5%,
+      43% 95.5%,
+      0% 100%,
+      31% 91%,
+      50% 75.5%,
+      63.5% 58%,
+      76% 35.5%,
+      84% 15.5%
+    );
+  }
+}

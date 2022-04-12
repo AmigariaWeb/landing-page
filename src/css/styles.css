@@ -205,7 +205,7 @@ strong {
   bottom: 0px;
   right: -1px;
   display: flex;
-  background-color: #00000033;
+  background-color: rgba(0, 0, 0, 0.2);
   mix-blend-mode: multiply;
   clip-path: polygon(88% 0%, 93% 11%, 97.5% 27%, 100% 44%, 90% 60%, 77% 73%, 63% 84.5%, 43% 95.5%, 0% 100%, 31% 91%, 50% 75.5%, 63.5% 58%, 76% 35.5%, 84% 15.5%);
 }
@@ -544,6 +544,314 @@ header .nav-bar ul .login {
   cursor: pointer;
 }
 
+.why {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1440px;
+  background: #71cc98;
+  padding: 60px 80px;
+}
+.why-card {
+  background-color: #fff;
+  color: #003a70;
+  display: flex;
+  flex-direction: column;
+  width: 26vw;
+  align-items: center;
+  border-radius: 40px;
+  margin: 0.5rem 1rem;
+  min-width: 320px;
+  max-width: 370px;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.why-card-img {
+  width: 3rem;
+  margin: 30px;
+}
+.why-card-title {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 36px;
+  text-align: center;
+}
+.why-card-p {
+  margin: 30px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.whatpublish {
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  padding: 80px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+.whatpublish-item {
+  width: 400px;
+  background-color: var(--yellow);
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.whatpublish-title {
+  margin-top: 10px;
+  font-family: "Atkinson";
+  font-size: 36px;
+  line-height: 63px;
+  font-weight: bold;
+  color: var(--blue-dark);
+}
+.whatpublish-description {
+  font-family: "Atkinson";
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 400;
+  color: var(--blue-dark);
+  text-align: center;
+}
+.whatpublish-description-info-container {
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px 40px;
+  max-width: 350px;
+}
+.whatpublish-description-info-details {
+  font-family: "Atkinson";
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 400;
+  color: var(--blue-dark);
+  text-align: center;
+}
+.whatpublish-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 660px;
+}
+.whatpublish-info-title {
+  font-family: "Atkinson";
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 400;
+  color: var(--blue-dark);
+  text-align: center;
+}
+.whatpublish-info-description {
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 40px;
+  font-family: "Atkinson";
+  font-size: 36px;
+  line-height: 63px;
+  font-weight: 400;
+  color: var(--blue-dark);
+  text-align: center;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1490196078);
+}
+
+.whatactivities {
+  background-color: var(--green);
+  font-size: 48px;
+  font-family: "Atkinson";
+  color: var(--blue-dark);
+  line-height: 70px;
+}
+.whatactivities-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 50px;
+  justify-content: space-between;
+  min-height: 37.5rem;
+}
+.whatactivities-container strong {
+  font-weight: 700;
+}
+.whatactivities-texts {
+  text-align: center;
+}
+.whatactivities-postits {
+  display: flex;
+  justify-content: center;
+  min-height: 30rem;
+  align-items: center;
+}
+.whatactivities-postit-item {
+  align-items: center;
+  aspect-ratio: unset;
+  background-color: var(--yellow);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 1rem;
+  position: absolute;
+  width: 95vw;
+  gap: 1rem;
+}
+.whatactivities-postit-item h4 {
+  font-size: 1.5625rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 63px;
+}
+.whatactivities-postit-item p {
+  font-size: 1.25rem;
+  line-height: 35px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.whatactivities-postit-item table {
+  background-color: var(--white);
+  font-size: 1.25rem;
+  line-height: 35px;
+  border-radius: 30px;
+  width: 100%;
+}
+.whatactivities-postit-item table td {
+  max-width: 10rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0.5rem;
+}
+.whatactivities-postit-item table td:first-child {
+  border-right: 2px dashed var(--blue-light);
+}
+.whatactivities-postit-item button {
+  font-size: 2.25rem;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  padding: 0.5rem;
+  color: var(--blue-light);
+  background-color: var(--white);
+}
+.whatactivities-postit-item_cursor {
+  position: absolute;
+  bottom: 0;
+  width: 8rem;
+  height: 8rem;
+}
+.whatactivities-postit-item_cursor image {
+  width: inherit;
+  height: inherit;
+}
+.whatactivities-postit-item:nth-child(1) {
+  margin-right: clamp(0%, 45vw + 5%, 45%);
+}
+.whatactivities-postit-item:nth-child(2) {
+  margin-right: clamp(0%, 25vw + 5%, 30%);
+}
+.whatactivities-postit-item:nth-child(3) {
+  margin-left: clamp(0%, 25vw + 5%, 30%);
+}
+.whatactivities-postit-item_small {
+  transform: scale(0.4);
+}
+.whatactivities-postit-item_medium {
+  transform: scale(0.6);
+}
+@media (max-width: 480px) {
+  .whatactivities-postit-item:not(.whatactivities-postit-item:last-child) {
+    display: none;
+  }
+}
+
+.call-to-action-2 {
+  width: 100%;
+  height: 100%;
+  background-color: var(--green);
+}
+
+.text-int {
+  padding-top: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.type-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.options {
+  list-style: disc;
+  padding: 8%;
+}
+
+.user {
+  border-radius: 16px;
+  background-color: var(--white);
+  border: 10px solid var(--blue-dark);
+  color: var(--blue-dark);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  width: 350px;
+  height: 300px;
+  margin-top: 50px;
+  padding: 0.5rem 0.3rem;
+  margin-right: 10%;
+}
+
+.text-user {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.voluntaries {
+  border-radius: 16px;
+  background-color: var(--yellow);
+  border: 10px solid var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  width: 400px;
+  height: 300px;
+  margin-top: 50px;
+  padding: 0.5rem 0.3rem;
+}
+
+.access-webpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.button-access-web {
+  text-align: center;
+  margin-top: 10%;
+  border-radius: 15px;
+  background-color: var(--blue-dark);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  width: 325px;
+  height: 45px;
+  margin-top: 50px;
+  text-decoration: none;
+  padding: 0.5rem 0.3rem;
+  align-content: center;
+}
+
 footer {
   background-color: var(--blue-dark-shadow);
 }
@@ -662,201 +970,6 @@ footer {
   text-align: end;
   align-self: end;
   flex: 100%;
-}
-
-.call-to-action-2 {
-  width: 100%;
-  height: 100%;
-  background-color: var(--green);
-}
-
-.text-int {
-  padding-top: 20px;
-  font-size: 50px;
-  text-align: center;
-}
-
-.type-user {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex: 1;
-}
-
-.options {
-  list-style: disc;
-  padding: 8%;
-}
-
-.user {
-  border-radius: 16px;
-  background-color: var(--white);
-  border: 10px solid var(--blue-dark);
-  color: var(--blue-dark);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  width: 350px;
-  height: 300px;
-  margin-top: 50px;
-  padding: 0.5rem 0.3rem;
-  margin-right: 10%;
-}
-
-.text-user {
-  font-size: 50px;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.voluntaries {
-  border-radius: 16px;
-  background-color: var(--yellow);
-  border: 10px solid var(--white);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  width: 400px;
-  height: 300px;
-  margin-top: 50px;
-  padding: 0.5rem 0.3rem;
-}
-
-.access-webpage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 20px;
-}
-
-.button-access-web {
-  text-align: center;
-  margin-top: 10%;
-  border-radius: 15px;
-  background-color: var(--blue-dark);
-  color: var(--white);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  width: 325px;
-  height: 45px;
-  margin-top: 50px;
-  text-decoration: none;
-  padding: 0.5rem 0.3rem;
-  align-content: center;
-}
-
-.why {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1440px;
-  background: #71cc98;
-  padding: 60px 80px;
-}
-.why-card {
-  background-color: #fff;
-  color: #003a70;
-  display: flex;
-  flex-direction: column;
-  width: 26vw;
-  align-items: center;
-  border-radius: 40px;
-  margin: 0.5rem 1rem;
-  min-width: 320px;
-  max-width: 370px;
-  box-shadow: 10px 10px 0px #00000026;
-}
-.why-card-img {
-  width: 3rem;
-  margin: 30px;
-}
-.why-card-title {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: 36px;
-  text-align: center;
-}
-.why-card-p {
-  margin: 30px;
-  text-align: center;
-  font-size: 20px;
-  line-height: 35px;
-}
-
-.whatpublish {
-  background-color: var(--yellow);
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-  padding: 80px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap-reverse;
-}
-.whatpublish-item {
-  width: 400px;
-  background-color: var(--yellow);
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
-}
-.whatpublish-title {
-  margin-top: 10px;
-  font-family: "Atkinson";
-  font-size: 36px;
-  line-height: 63px;
-  font-weight: bold;
-  color: var(--blue-dark);
-}
-.whatpublish-description {
-  font-family: "Atkinson";
-  font-size: 20px;
-  line-height: 35px;
-  font-weight: 400;
-  color: var(--blue-dark);
-  text-align: center;
-}
-.whatpublish-description-info-container {
-  background-color: white;
-  border-radius: 30px;
-  padding: 10px 40px;
-  max-width: 350px;
-}
-.whatpublish-description-info-details {
-  font-family: "Atkinson";
-  font-size: 20px;
-  line-height: 35px;
-  font-weight: 400;
-  color: var(--blue-dark);
-  text-align: center;
-}
-.whatpublish-info {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  max-width: 660px;
-}
-.whatpublish-info-title {
-  font-family: "Atkinson";
-  font-size: 48px;
-  line-height: 72px;
-  font-weight: 400;
-  color: var(--blue-dark);
-  text-align: center;
-}
-.whatpublish-info-description {
-  background-color: white;
-  padding: 10px 30px;
-  border-radius: 40px;
-  font-family: "Atkinson";
-  font-size: 36px;
-  line-height: 63px;
-  font-weight: 400;
-  color: var(--blue-dark);
-  text-align: center;
-  box-shadow: 10px 10px 0px #00000026;
 }
 
 /*# sourceMappingURL=styles.css.map */
