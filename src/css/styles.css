@@ -859,4 +859,40 @@ footer {
   box-shadow: 10px 10px 0px #00000026;
 }
 
+.workshops {
+  max-width: 1440px;
+  background: #F8E08E;
+}
+.workshops-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.workshops-section-half {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .workshops-section-half:last-child {
+    flex-direction: column-reverse;
+  }
+}
+.workshops-section p {
+  padding: 25px;
+  color: #003a70;
+  margin: 30px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+}
+.workshops-section img {
+  padding: 15px;
+}
+
 /*# sourceMappingURL=styles.css.map */

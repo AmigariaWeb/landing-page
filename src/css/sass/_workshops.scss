@@ -1,0 +1,41 @@
+.workshops {
+  max-width: 1440px;
+  background: #F8E08E;
+
+  &-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+    &-half {
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      @media (max-width: 1024px) {
+        &:last-child{
+          flex-direction: column-reverse;
+        }
+      }
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    & p {
+      padding: 25px;
+      color: #003a70;
+      margin: 30px;
+      text-align: center;
+      line-height: 35px;
+      font-size: 20px;
+    }
+
+    & img {
+      padding: 15px;
+    }
+  }
+}
