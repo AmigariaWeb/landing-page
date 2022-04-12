@@ -171,6 +171,40 @@ table {
   box-shadow: -52px 0px 0px #71cc98, -35px 0px 0px #71cc98, -17px 0px 0px #71cc98, 0px 0px 0px #71cc98, 17px 0px 0px #71cc98, 35px 0px 0px #71cc98, 52px 0px 0px #71cc98;
 }
 
+.postit {
+  border: solid 30px white;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+.postit::before {
+  height: 15%;
+  width: 50%;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: -1px;
+  display: flex;
+  background-color: white;
+  clip-path: polygon(100% 44%, 100% 100%, 0% 100%, 43% 95.5%, 63% 84.5%, 77% 73%, 90% 60%);
+}
+.postit::after {
+  height: 15%;
+  width: 50%;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: -1px;
+  display: flex;
+  background-color: #00000033;
+  mix-blend-mode: multiply;
+  clip-path: polygon(88% 0%, 93% 11%, 97.5% 27%, 100% 44%, 90% 60%, 77% 73%, 63% 84.5%, 43% 95.5%, 0% 100%, 31% 91%, 50% 75.5%, 63.5% 58%, 76% 35.5%, 84% 15.5%);
+}
+
 header {
   align-items: center;
   background-color: var(--white);
@@ -377,7 +411,7 @@ header .nav-bar ul .login {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
   padding: 50px;
   justify-content: space-between;
@@ -395,41 +429,86 @@ header .nav-bar ul .login {
   min-height: 30rem;
   align-items: center;
 }
-.whatactivities-postit-container {
-  position: absolute;
-  display: flex;
-  justify-content: center;
+.whatactivities-postit-item {
   align-items: center;
+  aspect-ratio: unset;
+  background-color: var(--yellow);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 1rem;
+  position: absolute;
+  width: 95vw;
+  gap: 1rem;
+}
+.whatactivities-postit-item h4 {
+  font-size: 1.5625rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 63px;
+}
+.whatactivities-postit-item p {
+  font-size: 1.25rem;
+  line-height: 35px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.whatactivities-postit-item table {
   background-color: var(--white);
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-  padding: 20px;
+  font-size: 1.25rem;
+  line-height: 35px;
+  border-radius: 30px;
+  width: 100%;
 }
-.whatactivities-postit-container:nth-child(1) {
-  margin-right: clamp(0%, 45vw + 5%, 40%);
+.whatactivities-postit-item table td {
+  max-width: 10rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0.5rem;
 }
-.whatactivities-postit-container:nth-child(2) {
+.whatactivities-postit-item table td:first-child {
+  border-right: 2px dashed var(--blue-light);
+}
+.whatactivities-postit-item button {
+  font-size: 2.25rem;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  padding: 0.5rem;
+  color: var(--blue-light);
+  background-color: var(--white);
+}
+.whatactivities-postit-item_cursor {
+  position: absolute;
+  bottom: 0;
+  width: 8rem;
+  height: 8rem;
+}
+.whatactivities-postit-item_cursor image {
+  width: inherit;
+  height: inherit;
+}
+.whatactivities-postit-item:nth-child(1) {
+  margin-right: clamp(0%, 45vw + 5%, 45%);
+}
+.whatactivities-postit-item:nth-child(2) {
   margin-right: clamp(0%, 25vw + 5%, 30%);
 }
-.whatactivities-postit-container:nth-child(3) {
+.whatactivities-postit-item:nth-child(3) {
   margin-left: clamp(0%, 25vw + 5%, 30%);
 }
-.whatactivities-postit-container .postit {
-  background-color: var(--yellow);
-  max-width: 400px;
-  width: 95vw;
-  min-height: 400px;
+.whatactivities-postit-item_small {
+  transform: scale(0.4);
 }
-.whatactivities-postit-container .postit_small {
-  max-width: 200px;
-  min-height: 200px;
-}
-.whatactivities-postit-container .postit_medium {
-  max-width: 226px;
-  min-height: 226px;
+.whatactivities-postit-item_medium {
+  transform: scale(0.6);
 }
 @media (max-width: 480px) {
-  .whatactivities-postit-container:not(.whatactivities-postit-container:last-child) {
+  .whatactivities-postit-item:not(.whatactivities-postit-item:last-child) {
     display: none;
   }
 }
