@@ -1,0 +1,125 @@
+.whatactivities {
+  background-color: var(--green);
+  font-size: 48px;
+  font-family: 'Atkinson';
+  color: var(--blue-dark);
+  line-height: 70px;
+
+  &-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-between;
+    min-height: 37.5rem;
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  &-texts {
+    text-align: center;
+  }
+
+  &-postits {
+    display: flex;
+    justify-content: center;
+    min-height: 30rem;
+    align-items: center;
+  }
+
+  &-postit-item {
+    align-items: center;
+    aspect-ratio: unset;
+    background-color: var(--yellow);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 1rem;
+    position: absolute;
+    width: 95vw;
+    gap: 1rem;
+
+    h4 {
+      font-size: 1.5625rem;
+      text-align: center;
+      font-weight: 700;
+      line-height: 63px;
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 35px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    table {
+      background-color: var(--white);
+      font-size: 1.25rem;
+      line-height: 35px;
+      border-radius: 30px;
+      width: 100%;
+      td {
+        max-width: 10rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 0.5rem;
+
+        &:first-child {
+          border-right: 2px dashed var(--blue-light);
+        }
+      }
+    }
+
+    button {
+      font-size: 2.25rem;
+      border-radius: 50px;
+      border: 1px solid transparent;
+      padding: 0.5rem;
+      color: var(--blue-light);
+      background-color: var(--white);
+    }
+
+    &_cursor {
+      position: absolute;
+      bottom: 0;
+      width: 8rem;
+      height: 8rem;
+      image {
+        width: inherit;
+        height: inherit;
+      }
+    }
+
+    &:nth-child(1) {
+      margin-right: clamp(0%, 45vw + 5%, 45%);
+    }
+    &:nth-child(2) {
+      margin-right: clamp(0%, 25vw + 5%, 30%);
+    }
+    &:nth-child(3) {
+      margin-left: clamp(0%, 25vw + 5%, 30%);
+    }
+
+    &_small {
+      transform: scale(0.4);
+    }
+    &_medium {
+      transform: scale(0.6);
+    }
+
+    @media (max-width: 480px) {
+      &:not(.whatactivities-postit-item:last-child) {
+        display: none;
+      }
+    }
+  }
+}
