@@ -3,6 +3,7 @@
   --blue-dark-shadow: #002140;
   --blue-light: #007d8a;
   --green: #71cc98;
+  --yellow-dark: #E5C34D;
   --yellow: #f8e08e;
   --white: #fff;
   --extra-large-screen: 1440px;
@@ -175,6 +176,40 @@ strong {
   font-weight: bold;
 }
 
+.postit {
+  border: solid 30px white;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+.postit::before {
+  height: 15%;
+  width: 50%;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: -1px;
+  display: flex;
+  background-color: white;
+  clip-path: polygon(100% 44%, 100% 100%, 0% 100%, 43% 95.5%, 63% 84.5%, 77% 73%, 90% 60%);
+}
+.postit::after {
+  height: 15%;
+  width: 50%;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: -1px;
+  display: flex;
+  background-color: #00000033;
+  mix-blend-mode: multiply;
+  clip-path: polygon(88% 0%, 93% 11%, 97.5% 27%, 100% 44%, 90% 60%, 77% 73%, 63% 84.5%, 43% 95.5%, 0% 100%, 31% 91%, 50% 75.5%, 63.5% 58%, 76% 35.5%, 84% 15.5%);
+}
+
 header {
   align-items: center;
   background-color: var(--white);
@@ -306,14 +341,18 @@ header .nav-bar ul .login {
   height: 100%;
   display: flex;
   box-sizing: border-box;
+<<<<<<< HEAD
   flex-wrap: wrap;
   align-items: stretch;
+=======
+>>>>>>> feature/whatpublish
 }
 .about-slogan .about {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+<<<<<<< HEAD
   flex: 1;
   /*width: 60%;
   /*height: 500px;*/
@@ -332,16 +371,41 @@ header .nav-bar ul .login {
   /*width: 92%;*/
   padding-top: 50px;
   text-align: center;
+=======
+  width: 60%;
+  height: 500px;
+  background-color: var(--blue-dark);
+  padding-left: 50px;
+}
+.about-slogan .text {
+  color: var(--white);
+  font-size: 40px;
+  width: 92%;
+  padding-top: 10px;
+>>>>>>> feature/whatpublish
 }
 .about-slogan .bold {
   font-weight: bold;
   display: inline;
 }
+<<<<<<< HEAD
+=======
+.about-slogan svg {
+  padding-top: 50px;
+  width: 300px;
+  min-height: 40px;
+}
+.about-slogan image {
+  width: inherit;
+  height: inherit;
+}
+>>>>>>> feature/whatpublish
 .about-slogan .slogan {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   flex: 1;
   /*width: 40%;
   height: 500px;*/
@@ -354,6 +418,13 @@ header .nav-bar ul .login {
     padding-left: 50px;
     padding-right: 50px;
   }
+=======
+  width: 40%;
+  height: 500px;
+  background-color: var(--yellow);
+  gap: 15px;
+  padding-left: 15px;
+>>>>>>> feature/whatpublish
 }
 .about-slogan .text-slogan {
   display: flex;
@@ -362,7 +433,10 @@ header .nav-bar ul .login {
   font-size: 50px;
   width: 75%;
   font-weight: bold;
+<<<<<<< HEAD
   text-align: center;
+=======
+>>>>>>> feature/whatpublish
 }
 .about-slogan .button-access {
   border-radius: 15px;
@@ -377,6 +451,7 @@ header .nav-bar ul .login {
   text-decoration: none;
   padding: 0.5rem 0.3rem;
   align-content: center;
+<<<<<<< HEAD
   box-shadow: var(--shadow);
 }
 
@@ -507,6 +582,163 @@ header .nav-bar ul .login {
   margin: 0px auto;
   display: block;
   cursor: pointer;
+=======
+}
+
+.whatpublish {
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  padding: 80px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+.whatpublish-item {
+  width: 400px;
+  background-color: var(--yellow);
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.whatpublish-title {
+  margin-top: 10px;
+  font-family: "Atkinson";
+  font-size: 36px;
+  line-height: 63px;
+  font-weight: bold;
+  color: var(--blue-dark);
+}
+.whatpublish-description {
+  font-family: "Atkinson";
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 400;
+  color: var(--blue-dark);
+  text-align: center;
+}
+.whatpublish-description-info-container {
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px 40px;
+  max-width: 350px;
+}
+.whatpublish-description-info-details {
+  font-family: "Atkinson";
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 400;
+  color: var(--blue-dark);
+  text-align: center;
+}
+.whatpublish-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 660px;
+}
+.whatpublish-info-title {
+  font-family: "Atkinson";
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 400;
+  color: var(--blue-dark);
+  text-align: center;
+}
+.whatpublish-info-description {
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 40px;
+  font-family: "Atkinson";
+  font-size: 36px;
+  line-height: 63px;
+  font-weight: 400;
+  color: var(--blue-dark);
+  text-align: center;
+  box-shadow: 10px 10px 0px #00000026;
+}
+
+.call-to-action-2 {
+  width: 100%;
+  height: 100%;
+  background-color: var(--green);
+}
+
+.text-int {
+  padding-top: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.type-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.options {
+  list-style: disc;
+  padding: 8%;
+}
+
+.user {
+  border-radius: 16px;
+  background-color: var(--white);
+  border: 10px solid var(--blue-dark);
+  color: var(--blue-dark);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  width: 350px;
+  height: 300px;
+  margin-top: 50px;
+  padding: 0.5rem 0.3rem;
+  margin-right: 10%;
+}
+
+.text-user {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.voluntaries {
+  border-radius: 16px;
+  background-color: var(--yellow);
+  border: 10px solid var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  width: 400px;
+  height: 300px;
+  margin-top: 50px;
+  padding: 0.5rem 0.3rem;
+}
+
+.access-webpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.button-access-web {
+  text-align: center;
+  margin-top: 10%;
+  border-radius: 15px;
+  background-color: var(--blue-dark);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  width: 325px;
+  height: 45px;
+  margin-top: 50px;
+  text-decoration: none;
+  padding: 0.5rem 0.3rem;
+  align-content: center;
+>>>>>>> feature/whatpublish
 }
 
 footer {
@@ -629,6 +861,7 @@ footer {
   flex: 100%;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 .about-slogan {
@@ -840,4 +1073,6 @@ footer {
 }
 
 >>>>>>> feature/why
+=======
+>>>>>>> feature/whatpublish
 /*# sourceMappingURL=styles.css.map */
