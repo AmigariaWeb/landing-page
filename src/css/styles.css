@@ -1089,4 +1089,60 @@ footer {
   padding: 15px;
 }
 
+.login-modal {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(20, 20, 20, 0.527);
+  z-index: 10;
+  transition: opacity 0.5s;
+}
+.login-modal-container {
+  max-width: 30rem;
+  width: 100%;
+  min-height: 12.5rem;
+  background-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  margin: 5px;
+  gap: 1rem;
+}
+.login-modal-container h4 {
+  font-size: 1.5625rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 63px;
+  color: var(--blue-dark);
+  text-align: center;
+}
+.login-modal-container p {
+  font-size: 1.25rem;
+  line-height: 35px;
+  text-align: center;
+}
+.login-modal-container svg {
+  width: 5rem;
+  height: 5rem;
+}
+.login-modal-container svg image {
+  width: inherit;
+  height: inherit;
+}
+
+.show-login-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
 /*# sourceMappingURL=styles.css.map */
