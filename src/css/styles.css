@@ -454,8 +454,12 @@ header .nav-bar ul .login {
 }
 .call2action-info {
   flex: 1;
-  padding: 30px;
+  padding: 80px 30px;
   min-width: 300px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 1024px) {
   .call2action-info {
@@ -479,7 +483,7 @@ header .nav-bar ul .login {
   background-color: var(--blue-dark);
   color: var(--white);
   min-height: 483px;
-  padding: 30px;
+  padding: 80px 30px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -498,7 +502,7 @@ header .nav-bar ul .login {
   text-align: center;
   letter-spacing: 0.0012em;
   color: #FFFFFF;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .call2action-group {
   display: flex;
@@ -543,6 +547,7 @@ header .nav-bar ul .login {
   letter-spacing: 0.0012em;
   color: #003A70;
   padding-left: 24px;
+  box-shadow: var(--shadow);
 }
 .call2action-group__input::placeholder {
   font-weight: 400;
@@ -571,6 +576,7 @@ header .nav-bar ul .login {
   margin: 0px auto;
   display: block;
   cursor: pointer;
+  box-shadow: var(--shadow);
 }
 
 .why {
