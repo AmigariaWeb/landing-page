@@ -685,9 +685,14 @@ header .nav-bar ul .login {
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  padding: 50px;
   justify-content: space-between;
   min-height: 37.5rem;
+  padding: 80px 30px 80px 30px;
+}
+@media screen and (max-width: 640px) {
+  .whatactivities-container {
+    padding: 80px 16px 80px 16px;
+  }
 }
 .whatactivities-container strong {
   font-weight: 700;
@@ -700,6 +705,7 @@ header .nav-bar ul .login {
   justify-content: center;
   min-height: 30rem;
   align-items: center;
+  padding: 50px 0px;
 }
 .whatactivities-postit-item {
   align-items: center;
