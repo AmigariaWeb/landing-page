@@ -9,8 +9,12 @@
     }
     &-info{
         flex: 1;
-        padding: 30px;
+        padding: 80px 30px;
         min-width: 300px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
         @media screen and (max-width: 1024px) {
             flex: 100%;
         }
@@ -32,7 +36,7 @@
         background-color: var(--blue-dark);
         color: var(--white);
         min-height: 483px;
-        padding: 30px;
+        padding: 80px 30px;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -51,7 +55,7 @@
         text-align: center;
         letter-spacing: 0.0012em;
         color: #FFFFFF;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     &-group{
         display: flex;
@@ -95,6 +99,7 @@
             letter-spacing: 0.0012em;
             color: #003A70;
             padding-left: 24px;
+            box-shadow: var(--shadow);
             &::placeholder{
                 // width: 220px;
                 // height: 35px;
@@ -125,6 +130,7 @@
             margin: 0px auto;
             display: block;
             cursor: pointer;
+            box-shadow: var(--shadow);
         }
 
     }
