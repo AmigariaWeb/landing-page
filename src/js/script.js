@@ -1,49 +1,58 @@
-/*********** Funcionalidades del Header *************/
-// Selectores
+/****************** Header Features Start ******************/
 const header = document.querySelector('header');
 const menuBurger = document.querySelector('#menu-burger');
-const menuBurgerPanel = document.querySelector('#menu-panel')
+const menuBurgerPanel = document.querySelector('#menu-panel');
+const btnLogin = document.querySelector('#btn-login');
+const loginModal = document.querySelector('#login-modal');
 
-// Eventos
-window.addEventListener('scroll', changeLogoSize)
+window.addEventListener('scroll', changeLogoSize);
 window.addEventListener('resize', resizeHandler);
 menuBurger.addEventListener('click', toogleMenu);
+btnLogin.addEventListener('click', showLoginModal);
 
 
-//Funciones
 function changeLogoSize() {
   window.scrollY > 0
     ? header.classList.add('header-on-scroll')
-    : header.classList.remove('header-on-scroll')
+    : header.classList.remove('header-on-scroll');
 }
 
 function toogleMenu() {
   menuBurger.classList.toggle('switch-burger');
-  menuBurgerPanel.classList.toggle('show-panel')
+  menuBurgerPanel.classList.toggle('show-panel');
 }
 
+function showLoginModal(e) {
+    e.preventDefault();
+    loginModal.classList.add("show-login-modal");
+    setTimeout(() => {
+        loginModal.classList.remove("show-login-modal");  
+    }, 3000);
+}
 
 function resizeHandler() {
   const largeScreen = 1024;
   const windowWidth = window.innerWidth;
 
   if (windowWidth < largeScreen) {
-    menuBurgerPanel.style.display = "none"
+    menuBurgerPanel.style.display = "none";
     setTimeout(() => {
-      menuBurgerPanel.classList.add('panel')
-      menuBurgerPanel.style.display = "flex"
+      menuBurgerPanel.classList.add('panel');
+      menuBurgerPanel.style.display = "flex";
     }, 1);
-    menuBurger.style.display = "block"
+    menuBurger.style.display = "block";
 
   } else {
-    menuBurgerPanel.classList.remove('panel')
-    menuBurgerPanel.classList.remove('show-panel')
-    menuBurger.style.display = "none"
+    menuBurgerPanel.classList.remove('panel');
+    menuBurgerPanel.classList.remove('show-panel');
+    menuBurger.style.display = "none";
     menuBurger.classList.remove('switch-burger');
   }
 }
-// Primera ejecución al abrir la página
+// First page render
 resizeHandler();
+
+/****************** Header Features End ******************/
 
 /******************FormValidation Start******************/
 
