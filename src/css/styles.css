@@ -621,14 +621,19 @@ header .nav-bar ul .login {
   background-color: var(--yellow);
   display: flex;
   flex-direction: row;
-  gap: 80px;
-  padding: 80px;
+  gap: 60px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap-reverse;
+  padding: 80px 30px 80px 30px;
+}
+@media screen and (max-width: 640px) {
+  .whatpublish {
+    padding: 80px 0px 80px 0px;
+  }
 }
 .whatpublish-item {
-  width: 400px;
+  min-width: 300px;
   background-color: var(--yellow);
   flex-direction: column;
   gap: 30px;
@@ -689,6 +694,11 @@ header .nav-bar ul .login {
   color: var(--blue-dark);
   text-align: center;
   box-shadow: 10px 10px 0px #00000026;
+}
+@media screen and (max-width: 640px) {
+  .whatpublish-info-description {
+    padding: 10px 16px;
+  }
 }
 
 .whatactivities {
