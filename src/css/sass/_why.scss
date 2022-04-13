@@ -4,7 +4,11 @@
   justify-content: center;
   max-width: 1440px;
   background: #71cc98;
-  padding: 60px 80px;
+  gap: 60px;
+  padding: 80px 30px 80px 30px;
+  @media screen and (max-width: 640px) {
+    padding: 80px 16px 80px 16px;
+  }
 
   &-card {
     background-color: #fff;
