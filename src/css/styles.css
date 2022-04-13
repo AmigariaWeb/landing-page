@@ -996,29 +996,49 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 100%;
   justify-content: space-between;
+  padding: 80px 30px 80px 30px;
+}
+@media screen and (max-width: 1024px) {
+  .workshops-section {
+    padding: 80px 30px 40px 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .workshops-section {
+    padding: 80px 16px 40px 16px;
+  }
 }
 .workshops-section-half {
   display: flex;
   width: 100%;
-  min-width: 500px;
+  min-width: 300px;
   flex: 1;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0px 15px 0px 0px;
 }
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+  .workshops-section-half {
+    padding: 0px 0px 40px 0px;
+    min-width: 100%;
+  }
+}
+.workshops-section-half:last-child {
+  padding: 0px 0px 0px 15px;
+}
+@media screen and (max-width: 1024px) {
   .workshops-section-half:last-child {
+    padding: 0px 0px 40px 0px;
     flex-direction: column-reverse;
     width: 100%;
   }
 }
 .workshops-section p {
-  padding: 25px;
+  padding: 0px 0px 16px 0px;
   color: #003a70;
-  margin: 30px;
   text-align: center;
   line-height: 72px;
   font-size: 48px;
