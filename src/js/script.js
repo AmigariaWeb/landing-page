@@ -45,6 +45,7 @@ function resizeHandler() {
 // Primera ejecución al abrir la página
 resizeHandler();
 
+<<<<<<< HEAD
 /******************FormValidation Start******************/
 
 const getType = (value) => {
@@ -189,3 +190,7 @@ const formC2a = document.querySelector('#c2a-landing')
 formC2a.addEventListener('submit', onSubmitForm, false);
 
 /******************FormValidation End******************/
+=======
+
+
+>>>>>>> feature/fireworks
