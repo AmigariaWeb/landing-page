@@ -34,6 +34,14 @@
             line-height: 48px;
             letter-spacing: 0.0012em;
         }
+        svg {
+            width: 96px;
+            height: 96px;
+            image {
+                width: inherit;
+                height: inherit;
+            }
+        }
     }
     &-info{
         flex: 1;

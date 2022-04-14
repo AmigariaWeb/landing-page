@@ -511,6 +511,14 @@ header .nav-bar ul .login {
   line-height: 48px;
   letter-spacing: 0.0012em;
 }
+.call2action-wrap svg {
+  width: 96px;
+  height: 96px;
+}
+.call2action-wrap svg image {
+  width: inherit;
+  height: inherit;
+}
 .call2action-info {
   flex: 1;
   padding: 80px 30px;
