@@ -21,6 +21,9 @@
             text-align: justify;
             line-height: 63px;
             letter-spacing: 0.0012em;
+            @media screen and (max-width: 1024px) {
+                text-align: left;
+            }
         }
         .text-c2a-disclaimer-title {
             font-size: 36px;
