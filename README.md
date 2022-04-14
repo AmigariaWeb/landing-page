@@ -1,5 +1,8 @@
 # Amigaria
 
+  ![Amigaria logo](./src/assets/images/amigaria-logo.svg)
+
+
 This repository contains a website developed as a team project, developed during the 2022 EOI Frontend development & Web design course. The team behind this project is the Lucid Lynx team, following the codename criteria stablished for this course structure.
 
 Currently the repository hosts only the landing page of the project. In the near future, we will develop the main application, which will be built using the Vue3 framework.
