@@ -157,7 +157,7 @@ table {
 .subline::after {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 120%;
   left: 50%;
   transform: translateX(-50%);
   height: 3px;
@@ -248,7 +248,7 @@ header {
   padding-right: 1rem;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 3;
 }
 header #logo {
   align-items: center;
@@ -365,6 +365,9 @@ header .nav-bar ul .login {
 }
 
 .about-slogan {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.15);
   background-color: white;
   display: flex;
   box-sizing: border-box;
@@ -507,6 +510,9 @@ header .nav-bar ul .login {
   font-weight: 900;
 }
 .call2action-contact {
+  z-index: 1;
+  position: relative;
+  box-shadow: 0px -10px 0px rgba(0, 0, 0, 0.15);
   flex: 1;
   background-color: var(--blue-dark);
   color: var(--white);
@@ -654,6 +660,9 @@ header .nav-bar ul .login {
 }
 
 .whatpublish {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.15);
   background-color: var(--yellow);
   display: flex;
   flex-direction: row;
@@ -1061,6 +1070,9 @@ footer {
 }
 
 .workshops {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.15);
   max-width: 1440px;
   background: #F8E08E;
 }
@@ -1091,6 +1103,14 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 0px 15px 0px 0px;
+}
+.workshops-section-half svg {
+  width: 20rem;
+  height: 20rem;
+}
+.workshops-section-half svg image {
+  width: inherit;
+  height: inherit;
 }
 @media screen and (max-width: 1024px) {
   .workshops-section-half {
