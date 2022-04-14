@@ -3,12 +3,14 @@ const header = document.querySelector('header');
 const menuBurger = document.querySelector('#menu-burger');
 const menuBurgerPanel = document.querySelector('#menu-panel');
 const btnLogin = document.querySelector('#btn-login');
+const btnLoginFooter = document.querySelector('#btn-loginFooter');
 const loginModal = document.querySelector('#login-modal');
 
 window.addEventListener('scroll', changeLogoSize);
 window.addEventListener('resize', resizeHandler);
 menuBurger.addEventListener('click', toogleMenu);
 btnLogin.addEventListener('click', showLoginModal);
+btnLoginFooter.addEventListener('click', showLoginModal);
 
 
 function changeLogoSize() {
