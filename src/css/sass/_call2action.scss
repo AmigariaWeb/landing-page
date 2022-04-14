@@ -6,6 +6,42 @@
         background-color: var(--white);
         justify-content: center;
         align-items: stretch;
+        .text-c2a {
+            display: flex;
+            color: #003A70;
+            align-content: center;
+            font-size: 48px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 72px;
+            letter-spacing: 0.0012em;
+        }
+        .text-c2a-sub {
+            font-size: 32px;
+            text-align: justify;
+            line-height: 63px;
+            letter-spacing: 0.0012em;
+        }
+        .text-c2a-disclaimer-title {
+            font-size: 36px;
+            text-align: center;
+            line-height: 72px;
+            letter-spacing: 0.0012em;
+        }
+        .text-c2a-disclaimer {
+            font-size: 24px;
+            text-align: center;
+            line-height: 48px;
+            letter-spacing: 0.0012em;
+        }
+        svg {
+            width: 96px;
+            height: 96px;
+            image {
+                width: inherit;
+                height: inherit;
+            }
+        }
     }
     &-info{
         flex: 1;
