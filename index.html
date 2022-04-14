@@ -21,7 +21,7 @@
       <nav class="nav-bar">
         <ul id="menu-panel" class="panel">
           <li><a href="#call2action-contact" class="button-nav">Registrarse</a></li>
-          <li><a href="#" class="button-nav login">Iniciar Sesión</a></li>
+          <li><a href="#" class="button-nav login" id="btn-login">Iniciar Sesión</a></li>
         </ul>
         <svg id="menu-burger" class="menu-burger" width="2rem" height="2rem">
           <rect class="burger-line" width="2rem" height="0.3rem"></rect>
@@ -70,6 +70,11 @@
           <p class="why-card-p">A veces queremos <strong>ayudar</strong> y no sabémos cómo, o por dónde empezar. Ayudar
             a los demás nos hace <strong>bien</strong>, todos podemos demostrar que somos buenas personas con los demás.
           </p>
+        </div>
+        <div class="divider divider-fill-yellow divider-rotate">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+          </svg>
         </div>
       </section>
 
@@ -188,6 +193,11 @@
             <strong>Únete</strong> a una actividad de otro usuario y <strong>disfruta de la experiencia</strong>
           </p>
         </div>
+        <div class="divider divider-fill-yellow">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+          </svg>
+        </div>
       </section>
 
       <section class="workshops">
@@ -196,10 +206,14 @@
             <p>
               Amigaria organiza <strong>talleres y actividades</strong> regularmente para nuestra comunidad.
             </p>
-            <img src="./android-chrome-192x192.png" alt="random">
+            <svg>
+              <image xlink:href="./src/assets/images/amigaria-vector-talleres-perro.svg" src="yourfallback.png" />
+            </svg>
           </div>
         <div class="workshops-section-half">
-            <img src="./android-chrome-192x192.png" alt="random">
+          <svg>
+            <image xlink:href="./src/assets/images/amigaria-vector-talleres-marioneta.svg" src="yourfallback.png" />
+          </svg>
             <p>
               Descubre talleres increíbles en los que el objetivo es <strong>aprender y divertirse</strong>
             </p>
@@ -351,6 +365,15 @@
       </div>
   </div>
   </footer>
+  </div>
+  <div class="login-modal" id="login-modal">
+    <div class="login-modal-container">
+      <h4>Estamos trabajando en ello</h4>
+      <p>En breve nuestros servicios estarán disponibles</p>
+      <svg>
+        <image xlink:href="./src/assets/images/work_in_progress.svg" src="yourfallback.png" />
+      </svg>
+    </div>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script defer src="./src/js/fireworks.js"></script>

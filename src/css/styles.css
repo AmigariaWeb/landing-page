@@ -124,7 +124,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   line-height: 1;
-  background-color: var(--blue-dark);
+  background-color: var(--blue-dark-shadow);
   font-family: "Atkinson";
 }
 
@@ -211,6 +211,34 @@ strong {
   clip-path: polygon(88% 0%, 93% 11%, 97.5% 27%, 100% 44%, 90% 60%, 77% 73%, 63% 84.5%, 43% 95.5%, 0% 100%, 31% 91%, 50% 75.5%, 63.5% 58%, 76% 35.5%, 84% 15.5%);
 }
 
+.divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  padding-bottom: 10px;
+}
+.divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+  -webkit-filter: drop-shadow(0px 10px 0px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.15));
+}
+.divider-rotate {
+  transform: rotateX(180deg);
+}
+.divider-fill-yellow {
+  fill: var(--yellow);
+}
+.divider-fill-green {
+  fill: var(--green);
+}
+
 header {
   align-items: center;
   background-color: var(--white);
@@ -220,7 +248,7 @@ header {
   padding-right: 1rem;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 3;
 }
 header #logo {
   align-items: center;
@@ -245,7 +273,7 @@ header #logo svg image {
 header #logo h1 {
   color: var(--blue-dark);
   font-family: "Josefin Sans", sans-serif;
-  font-size: clamp(2rem, 8vw + 1rem, 4.5rem);
+  font-size: clamp(1.5rem, 5vw + 1rem, 4.5rem);
   font-weight: 700;
   padding-bottom: 10px;
   transition: transform 1s ease;
@@ -328,7 +356,7 @@ header .nav-bar ul .login {
   transform: scale(0.6) translateY(-25px);
 }
 .header-on-scroll #logo h1 {
-  transform: scale(0.6) translateY(-12px) translateX(-120px);
+  transform: scale(0.7) translateY(-12px) translateX(-60px);
 }
 
 .container {
@@ -337,6 +365,9 @@ header .nav-bar ul .login {
 }
 
 .about-slogan {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.15);
   background-color: white;
   display: flex;
   box-sizing: border-box;
@@ -507,6 +538,9 @@ header .nav-bar ul .login {
   font-weight: 900;
 }
 .call2action-contact {
+  z-index: 1;
+  position: relative;
+  box-shadow: 0px -10px 0px rgba(0, 0, 0, 0.15);
   flex: 1;
   background-color: var(--blue-dark);
   color: var(--white);
@@ -608,6 +642,7 @@ header .nav-bar ul .login {
 }
 
 .why {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -653,6 +688,9 @@ header .nav-bar ul .login {
 }
 
 .whatpublish {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.15);
   background-color: var(--yellow);
   display: flex;
   flex-direction: row;
@@ -737,6 +775,7 @@ header .nav-bar ul .login {
 }
 
 .whatactivities {
+  position: relative;
   background-color: var(--green);
   font-size: 48px;
   font-family: "Atkinson";
@@ -1059,6 +1098,9 @@ footer {
 }
 
 .workshops {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.15);
   max-width: 1440px;
   background: #F8E08E;
 }
@@ -1090,6 +1132,14 @@ footer {
   align-items: center;
   padding: 0px 15px 0px 0px;
 }
+.workshops-section-half svg {
+  width: 20rem;
+  height: 20rem;
+}
+.workshops-section-half svg image {
+  width: inherit;
+  height: inherit;
+}
 @media screen and (max-width: 1024px) {
   .workshops-section-half {
     padding: 0px 0px 40px 0px;
@@ -1115,6 +1165,62 @@ footer {
 }
 .workshops-section img {
   padding: 15px;
+}
+
+.login-modal {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(20, 20, 20, 0.527);
+  z-index: 10;
+  transition: opacity 0.5s;
+}
+.login-modal-container {
+  max-width: 30rem;
+  width: 100%;
+  min-height: 12.5rem;
+  background-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  margin: 5px;
+  gap: 1rem;
+}
+.login-modal-container h4 {
+  font-size: 1.5625rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 63px;
+  color: var(--blue-dark);
+  text-align: center;
+}
+.login-modal-container p {
+  font-size: 1.25rem;
+  line-height: 35px;
+  text-align: center;
+}
+.login-modal-container svg {
+  width: 5rem;
+  height: 5rem;
+}
+.login-modal-container svg image {
+  width: inherit;
+  height: inherit;
+}
+
+.show-login-modal {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,4 @@
-.call2action{
+.call2action{   
     &-wrap{
         display: flex;
         flex-wrap: wrap;
@@ -60,6 +60,9 @@
         }
     }
     &-contact{
+        z-index: 1;
+        position: relative;
+        box-shadow: 0px -10px 0px rgba(0, 0, 0, 0.15);
         flex: 1;
         background-color: var(--blue-dark);
         color: var(--white);
