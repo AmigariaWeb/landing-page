@@ -343,6 +343,7 @@ header .nav-bar ul .button-nav {
   font-weight: 700;
   padding: 0.5rem 0.3rem;
   text-decoration: none;
+  transition: color 0.5s ease;
 }
 header .nav-bar ul .button-nav:hover {
   color: var(--green);
@@ -473,6 +474,10 @@ header .nav-bar ul .login {
   line-height: 63px;
   text-align: center;
   letter-spacing: 0.0012em;
+  transition: transform 0.3s ease;
+}
+.about-slogan .button-access:hover {
+  transform: scale(1.05);
 }
 
 .call2action-wrap {
@@ -611,6 +616,10 @@ header .nav-bar ul .login {
   display: block;
   cursor: pointer;
   box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+.call2action-group__submit:hover {
+  transform: scale(1.05);
 }
 
 .why {
@@ -683,6 +692,7 @@ header .nav-bar ul .login {
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  min-height: 350px;
 }
 .whatpublish-title {
   margin-top: 10px;

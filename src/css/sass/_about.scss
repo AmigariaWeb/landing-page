@@ -106,5 +106,10 @@
         line-height: 63px;
         text-align: center;
         letter-spacing: 0.0012em;
+        transition: transform 0.3s ease;
+
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 }
