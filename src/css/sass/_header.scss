@@ -33,7 +33,7 @@ header {
     h1 {
       color: var(--blue-dark);
       font-family: "Josefin Sans", sans-serif;
-      font-size:clamp(2rem, 8vw + 1rem, 4.5rem);
+      font-size:clamp(1.5rem, 5vw + 1rem, 4.5rem);
       font-weight: 700;
       padding-bottom: 10px;
       transition: transform 1s ease;
@@ -134,7 +134,7 @@ header {
     }
 
     h1 {
-      transform: scale(0.6) translateY(-12px) translateX(-120px);
+      transform: scale(0.7) translateY(-12px) translateX(-60px);
     }
   }
 }
