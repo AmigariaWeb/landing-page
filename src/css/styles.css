@@ -206,7 +206,7 @@ strong {
   bottom: 0px;
   right: -1px;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #00000033;
   mix-blend-mode: multiply;
   clip-path: polygon(88% 0%, 93% 11%, 97.5% 27%, 100% 44%, 90% 60%, 77% 73%, 63% 84.5%, 43% 95.5%, 0% 100%, 31% 91%, 50% 75.5%, 63.5% 58%, 76% 35.5%, 84% 15.5%);
 }
@@ -452,6 +452,34 @@ header .nav-bar ul .login {
   justify-content: center;
   align-items: stretch;
 }
+.call2action-wrap .text-c2a {
+  display: flex;
+  color: #003A70;
+  align-content: center;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 72px;
+  letter-spacing: 0.0012em;
+}
+.call2action-wrap .text-c2a-sub {
+  font-size: 32px;
+  text-align: justify;
+  line-height: 63px;
+  letter-spacing: 0.0012em;
+}
+.call2action-wrap .text-c2a-disclaimer-title {
+  font-size: 36px;
+  text-align: center;
+  line-height: 72px;
+  letter-spacing: 0.0012em;
+}
+.call2action-wrap .text-c2a-disclaimer {
+  font-size: 24px;
+  text-align: center;
+  line-height: 48px;
+  letter-spacing: 0.0012em;
+}
 .call2action-info {
   flex: 1;
   padding: 80px 30px;
@@ -604,7 +632,7 @@ header .nav-bar ul .login {
   margin: 0.5rem 1rem;
   min-width: 320px;
   max-width: 370px;
-  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1490196078);
+  box-shadow: 10px 10px 0px #00000026;
 }
 .why-card-img {
   width: 3rem;
@@ -700,7 +728,7 @@ header .nav-bar ul .login {
   font-weight: 400;
   color: var(--blue-dark);
   text-align: center;
-  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1490196078);
+  box-shadow: 10px 10px 0px #00000026;
 }
 @media screen and (max-width: 640px) {
   .whatpublish-info-description {
