@@ -1044,7 +1044,7 @@ footer {
   min-width: 300px;
   padding: 8px 16px;
   text-align: center;
-  flex: 1;
+  flex: 100%;
 }
 .footer-info--small {
   font-size: 20px;
@@ -1105,9 +1105,15 @@ footer {
   text-decoration: none;
   color: var(--white);
   display: block;
+  padding: 0px 8px;
 }
 .footer-info__link:hover {
   text-decoration: underline;
+}
+.footer-info__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .footer-info__version {
   text-align: end;

@@ -32,7 +32,7 @@
     </header>
 
     <main>
-      <section class="about-slogan">
+      <section class="about-slogan" id="section-about">
         <div class="about">
           <h2 class="text-up"><span class="bold">Amigaria </span> es una plataforma web accesible de integración social.</h2>
           
@@ -48,7 +48,7 @@
           <a href="#call2action-contact" class="button-access">Quiero Participar</a>
         </div>
       </section>
-      <section class="why">
+      <section class="why" id="section-why">
         <div class="why-card">
           <img class="why-card-img" src="https://cdn-icons-png.flaticon.com/512/1786/1786971.png" alt="">
           <div class="why-card-title subline subline--dash">Todos necesitamos <strong>ayuda</strong>.
@@ -78,7 +78,7 @@
         </div>
       </section>
 
-      <section class="whatpublish">
+      <section class="whatpublish" id="section-whatpublish">
         <div class="whatpublish-item postit">
             <h2 class="whatpublish-title">Título/Petición</h2>
             <p class="whatpublish-description">Descripción de la actividad</p>
@@ -103,7 +103,7 @@
           </div>
         </div>
       </section>
-      <section class="whatactivities">
+      <section class="whatactivities" id="section-whatactivities">
         <div class="whatactivities-container">
           <p class="whatactivities-texts">
             <strong>Descubre</strong> actividades interesantes publicadas por otros usuarios
@@ -200,7 +200,7 @@
         </div>
       </section>
 
-      <section class="workshops">
+      <section class="workshops" id="section-workshops">
         <div class="workshops-section">
           <div class="workshops-section-half">
             <p>
@@ -270,21 +270,34 @@
         </div>
         <div class="footer-info ">
           <h2 class="footer-info__title">Enlaces rápidos</h2>
-          <a href="" target="_blank" rel="noopener noreferrer" class="footer-info__link">
-            Iniciar sesión
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer" class="footer-info__link">
-            Registrarse
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer" class="footer-info__link">
-            Reportar abuso de uso
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer" class="footer-info__link">
-            Términos y condiciones
-          </a>
+          <div class="footer-info__nav"> 
+            <a href="#section-about" rel="noopener noreferrer" class="footer-info__link">
+              Sobre Amigaria
+            </a>
+            <a href="#section-why" rel="noopener noreferrer" class="footer-info__link">
+              Porque Amigaria
+            </a>
+            <a href="#section-whatpublish" rel="noopener noreferrer" class="footer-info__link">
+              Como crear peticiones
+            </a>
+            <a href="#section-whatactivities" rel="noopener noreferrer" class="footer-info__link">
+              Como participar
+            </a>
+            <a href="#section-workshops" rel="noopener noreferrer" class="footer-info__link">
+              Talleres
+            </a>
+            <a href="#call2action-contact" rel="noopener noreferrer" class="footer-info__link">
+              Registrarse
+            </a>
+            <a href="#" id="btn-loginFooter" rel="noopener noreferrer" class="footer-info__link login">
+              Iniciar sesión
+            </a>
+          </div>
         </div>
+        <!--
         <div class="footer-info ">
-          <h2 class="footer-info__title">FAQ</h2>
+          
+            <h2 class="footer-info__title">FAQ</h2>
           <a href="" target="_blank" rel="noopener noreferrer" class="footer-info__link">
             ¿Es seguro?
           </a>
@@ -298,6 +311,8 @@
             Términos y condiciones
           </a>
         </div>
+      -->
+        <!--
         <div class="footer-info ">
           <h2 class="footer-info__title">Contacto</h2>
           <a href="" target="_blank" rel="noopener noreferrer" class="footer-info__link">
@@ -313,6 +328,7 @@
             Asistencia
           </a>
         </div>
+      -->
         <span class="footer-info footer-info--small footer-info__version">Currently v0.0 - proyecto EOI © 2022.</span>
       </div>
       <div class="footer-info footer-info-wrap--line-top">
