@@ -668,10 +668,12 @@ header .nav-bar ul .login {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   max-width: 1440px;
   background: #71cc98;
-  gap: 60px;
-  padding: 80px 30px 80px 30px;
+  gap: 30px;
+  padding: 40px 30px 80px 30px;
+  flex-direction: column;
 }
 @media screen and (max-width: 640px) {
   .why {
@@ -688,8 +690,11 @@ header .nav-bar ul .login {
   border-radius: 40px;
   margin: 0.5rem 1rem;
   min-width: 320px;
-  max-width: 370px;
+  max-width: 390px;
   box-shadow: 10px 10px 0px #00000026;
+}
+.why-card-container {
+  display: flex;
 }
 .why-card-img {
   width: 3rem;
