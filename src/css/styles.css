@@ -14,16 +14,9 @@
 }
 
 @font-face {
-  font-family: "Josefin Sans";
-  src: url("../assets/fonts/JosefinSans-Regular/JosefinSans-Regular.woff") format("woff");
-  src: url("../assets/fonts/JosefinSans-Regular/JosefinSans-Regular.eot") format("embedded-opentype"), url("../assets/fonts/JosefinSans-Regular/JosefinSans-Regular.ttf") format("truetype"), url("../assets/fonts/JosefinSans-Regular/JosefinSans-Regular.svg") format("svg");
+  font-family: "Pacifico";
+  src: url("../assets/fonts/Pacifico/Pacifico-Regular.woff2") format("woff2"), url("../assets/fonts/Pacifico/Pacifico-Regular.woff") format("woff"), url("../assets/fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
   font-weight: 400;
-}
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../assets/fonts/JosefinSans-Bold/JosefinSans-Bold.woff") format("woff");
-  src: url("../assets/fonts/JosefinSans-Bold/JosefinSans-Bold.eot") format("embedded-opentype"), url("../assets/fonts/JosefinSans-Bold/JosefinSans-Bold.ttf") format("truetype"), url("../assets/fonts/JosefinSans-Bold/JosefinSans-Bold.svg") format("svg");
-  font-weight: 700;
 }
 @font-face {
   font-family: "Atkinson";
@@ -260,7 +253,6 @@ header #logo {
 }
 header #logo svg {
   background-color: var(--white);
-  border-radius: 50%;
   border: 10px solid var(--white);
   height: 5.5rem;
   transition: transform 1s ease;
@@ -272,9 +264,9 @@ header #logo svg image {
 }
 header #logo h1 {
   color: var(--blue-dark);
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Pacifico", sans-serif;
   font-size: clamp(1.5rem, 5vw + 1rem, 4.5rem);
-  font-weight: 700;
+  font-weight: 400;
   padding-bottom: 10px;
   transition: transform 1s ease;
 }
@@ -357,7 +349,7 @@ header .nav-bar ul .login {
   transform: scale(0.6) translateY(-25px);
 }
 .header-on-scroll #logo h1 {
-  transform: scale(0.7) translateY(-12px) translateX(-60px);
+  transform: scale(0.7) translateY(-25px) translateX(-60px);
 }
 
 .container {
@@ -1057,7 +1049,7 @@ footer {
 .footer-logo-title {
   font-size: 64px;
   line-height: 63px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Pacifico", sans-serif;
 }
 .footer-info {
   min-width: 300px;

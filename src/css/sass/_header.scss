@@ -19,7 +19,6 @@ header {
 
     svg {
       background-color: var(--white);
-      border-radius: 50%;
       border: 10px solid var(--white);
       height: 5.5rem;
       transition: transform 1s ease;
@@ -32,9 +31,9 @@ header {
     }
     h1 {
       color: var(--blue-dark);
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "Pacifico", sans-serif;
       font-size:clamp(1.5rem, 5vw + 1rem, 4.5rem);
-      font-weight: 700;
+      font-weight: 400;
       padding-bottom: 10px;
       transition: transform 1s ease;
 
@@ -135,7 +134,7 @@ header {
     }
 
     h1 {
-      transform: scale(0.7) translateY(-12px) translateX(-60px);
+      transform: scale(0.7) translateY(-25px) translateX(-60px);
     }
   }
 }
