@@ -24,8 +24,17 @@
   }
 
   &-texts {
+
+    &-up{
     text-align: center;
     max-width: 900px;
+  }
+
+  &-down{
+    font-size: 32px;
+    text-align: center;
+    max-width: 900px;
+  }
   }
 
   &-postits {
@@ -49,14 +58,7 @@
     width: 95vw;
     gap: 1rem;
 
-    h4 {
-      font-size: 1.5625rem;
-      text-align: center;
-      font-weight: 700;
-      line-height: 63px;
-    }
-
-    p {
+    &-content {
       font-size: 1.25rem;
       line-height: 35px;
       display: -webkit-box;
@@ -64,6 +66,13 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+
+    &-title {
+      font-size: 28px;
+      text-align: center;
+      font-weight: 700;
+      line-height: 1.5;
     }
 
     table {
