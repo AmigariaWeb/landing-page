@@ -796,14 +796,21 @@ header .nav-bar ul .login {
     width: 100%;
   }
 }
-.workshops-section p {
+.workshops-section-half h2 {
   padding: 0px 0px 16px 0px;
   color: #003a70;
   text-align: center;
-  line-height: 72px;
-  font-size: 48px;
+  line-height: 1.5;
+  font-size: 32px;
 }
-.workshops-section img {
+.workshops-section-half p {
+  padding: 0px 0px 16px 0px;
+  color: #003a70;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 32px;
+}
+.workshops-section-half img {
   padding: 15px;
 }
 

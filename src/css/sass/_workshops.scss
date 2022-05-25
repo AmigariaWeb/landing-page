@@ -50,26 +50,28 @@
           width: 100%;
         }
       }
+
+      h2 {
+        padding: 0px 0px 16px 0px;
+        color: #003a70;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 32px;
+      }
+  
+      p {
+        padding: 0px 0px 16px 0px;
+        color: #003a70;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 32px;
+      }
+  
+      img {
+        padding: 15px;
+      }
     }
 
-    & h2 {
-      padding: 0px 0px 16px 0px;
-      color: #003a70;
-      text-align: center;
-      line-height: 1.5;
-      font-size: 48px;
-    }
 
-    & p {
-      padding: 0px 0px 16px 0px;
-      color: #003a70;
-      text-align: center;
-      line-height: 1.5;
-      font-size: 32px;
-    }
-
-    & img {
-      padding: 15px;
-    }
   }
 }
