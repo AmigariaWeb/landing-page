@@ -261,12 +261,27 @@
               actividades sociales.</strong>
           </p>
         </div>
-        <div class="call2action-contact about-slogan" id="call2action-contact">
-          <h2 class="call2action-title">¿Te apuntas?</h2>
-        <div class="slogan">
-          <h2 class="text-slogan">Ayudando a otras personas, puedes crear un mundo mejor</h2>
-          <a href="https://app.amigaria.com/login" class="button-access">Quiero Participar</a>
-        </div>
+        <div class="call2action-contact" id="call2action-contact">
+          <h2 class="call2action-title">¿Eres una organización y quieres crear un taller?</h2>
+          <p class="call2action-subtitle">¡Ponte en contacto con nosotros!</p>
+          <form id="c2a-landing" action="" method="post">
+            <div class="call2action-group inputControl">
+              <label class="call2action-group__label" for="user_name">Nombre: <span class="error"></span></label>
+              <input class="call2action-group__input" type="text" name="user_name" id="user_name" require d
+                autocomplete="off" data-validation="username">
+            </div>
+            <div class="call2action-group inputControl">
+              <label class="call2action-group__label" for="user_email">Email: <span class="error"></span></label>
+              <input class="call2action-group__input" type="email" name="user_email" id="user_email" require d
+                autocomplete="off" data-validation="email">
+            </div>
+            <div class="call2action-group inputControl">
+              <label class="call2action-group__label" for="message">Mensaje: <span class="error"></span></label>
+              <textarea class="call2action-group__textarea" type="text" name="message" id="message" require d
+                autocomplete="off" data-validation="message"></textarea>
+            </div>
+            <input class="call2action-group__submit" type="submit" value="Enviar">
+          </form>
         </div>
       </section>
     </main>
@@ -299,7 +314,8 @@
             <a href="https://app.amigaria.com/login/register" rel="noopener noreferrer" class="footer-info__link">
               Registrarse
             </a>
-            <a href="https://app.amigaria.com/login" id="btn-loginFooter" rel="noopener noreferrer" class="footer-info__link login">
+            <a href="https://app.amigaria.com/login" id="btn-loginFooter" rel="noopener noreferrer"
+              class="footer-info__link login">
               Iniciar sesión
             </a>
           </div>
@@ -352,10 +368,16 @@
           </a>
         </div>
       </div>
+    </footer>
   </div>
-  </footer>
-  </div>
-    <script defer src="./src/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("NOR1L4_pZ48IEhC0C");
+    })();
+  </script>
+  <script type="text/javascript" src="./src/js/contact.js"></script>
+  <script defer src="./src/js/script.js"></script>
 </body>
 
 </html>
