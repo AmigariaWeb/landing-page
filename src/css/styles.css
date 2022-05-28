@@ -944,6 +944,23 @@ header .nav-bar ul .login {
 .call2action-group__label span {
   font-size: 18px;
 }
+.call2action-group__textarea {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 0.0012em;
+  color: #003a70;
+  padding-left: 24px;
+  box-shadow: var(--shadow);
+}
 .call2action-group__input {
   border: none;
   background-image: none;

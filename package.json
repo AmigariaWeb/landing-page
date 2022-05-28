@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "sass": "sass --poll --watch ./src/css/sass/styles.scss:./src/css/styles.css --update",
-    "styleint":"stylelint './src/css/styles.css' --fix",
+    "styleint": "stylelint './src/css/styles.css' --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,5 +29,8 @@
     "sass": "^1.49.9",
     "stylelint": "^14.6.1",
     "stylelint-config-standard": "^25.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
   }
 }

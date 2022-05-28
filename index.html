@@ -264,7 +264,7 @@
         <div class="call2action-contact" id="call2action-contact">
           <h2 class="call2action-title">¿Eres una organización y quieres crear un taller?</h2>
           <p class="call2action-subtitle">¡Ponte en contacto con nosotros!</p>
-          <form id="c2a-landing" action="" method="post">
+          <form id="contact_form" method="post">
             <div class="call2action-group inputControl">
               <label class="call2action-group__label" for="user_name">Nombre: <span class="error"></span></label>
               <input class="call2action-group__input" type="text" name="user_name" id="user_name" require d
@@ -280,7 +280,7 @@
               <textarea class="call2action-group__textarea" type="text" name="message" id="message" require d
                 autocomplete="off" data-validation="message"></textarea>
             </div>
-            <input class="call2action-group__submit" type="submit" value="Enviar">
+            <input id="submit_form" class="call2action-group__submit" type="submit" value="Enviar Email">
           </form>
         </div>
       </section>
@@ -370,13 +370,56 @@
       </div>
     </footer>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- SWEET ALERT-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    const swal = (type, title, message) => {
+      if (type === "success") {
+        Swal.fire({
+          title: title,
+          text: message,
+          icon: "success",
+          confirmButtonText: "OK!",
+        });
+      }
+      if (type === "error") {
+        Swal.fire({
+          title: title,
+          text: message,
+          icon: "error",
+          confirmButtonText: "Ok!",
+        });
+      }
+    }
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/dotenv@16.0.1/lib/main.min.js"></script>
   <script type="text/javascript">
     (function () {
-      emailjs.init("NOR1L4_pZ48IEhC0C");
+      emailjs.init(process.env.EMAIL_JS_KEY);
     })();
   </script>
-  <script type="text/javascript" src="./src/js/contact.js"></script>
+  <script>
+    const button = document.querySelector("#submit_form");
+    const form = document.querySelector("#contact_form");
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      button.value = "Enviando....";
+
+      const service_id = "gmail";
+      const template_id = "email_form";
+
+      emailjs.sendForm(service_id, template_id, this)
+        .then(() => {
+          button.value = "Enviar Email";
+          swal("success", "Bien!", "El correo se ha enviado correctamente");
+        }, (err) => {
+          button.value = "Enviar Email";
+          swal("error", "Ups!", "Ha ocurrido un error al enviar el correo");
+        });
+    });
+  </script>
   <script defer src="./src/js/script.js"></script>
 </body>
 
