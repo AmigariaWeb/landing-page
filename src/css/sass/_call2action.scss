@@ -19,8 +19,8 @@
         }
 
         .text-c2a-sub {
-            font-size: 32px;
-            text-align: justify;
+            font-size: 24px;
+            text-align: center;
             line-height: 1.5;
             letter-spacing: 0.0012em;
 
@@ -46,10 +46,12 @@
         svg {
             width: 96px;
             height: 96px;
+            margin-top:1rem;
 
             image {
                 width: inherit;
                 height: inherit;
+
             }
         }
     }
@@ -115,7 +117,7 @@
     }
 
     &-subtitle {
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 30px
     }
 
@@ -154,7 +156,7 @@
             background-image: none;
             background-color: transparent;
             box-shadow: none;
-            height: 150px;
+            height: 120px;
             background-color: #fff;
             border-radius: 20px;
             margin-bottom: 24px;
