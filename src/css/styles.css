@@ -833,7 +833,7 @@ header .nav-bar ul .login {
 .call2action-wrap .text-c2a-sub {
   font-size: 32px;
   text-align: justify;
-  line-height: 63px;
+  line-height: 1.5;
   letter-spacing: 0.0012em;
 }
 @media screen and (max-width: 1024px) {
@@ -850,7 +850,7 @@ header .nav-bar ul .login {
 .call2action-wrap .text-c2a-disclaimer {
   font-size: 24px;
   text-align: center;
-  line-height: 48px;
+  line-height: 1.5;
   letter-spacing: 0.0012em;
 }
 .call2action-wrap svg {
@@ -879,7 +879,7 @@ header .nav-bar ul .login {
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 63px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.0012em;
   color: var(--blue-dark);
@@ -910,7 +910,7 @@ header .nav-bar ul .login {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  line-height: 72px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.0012em;
   color: #FFFFFF;
