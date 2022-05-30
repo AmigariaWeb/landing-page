@@ -267,17 +267,17 @@
           <form id="contact_form" method="post">
             <div class="call2action-group inputControl">
               <label class="call2action-group__label" for="user_name">Nombre: <span class="error"></span></label>
-              <input class="call2action-group__input" type="text" name="user_name" id="user_name" require d
+              <input class="call2action-group__input" type="text" name="user_name" id="user_name" required
                 autocomplete="off" data-validation="username">
             </div>
             <div class="call2action-group inputControl">
               <label class="call2action-group__label" for="user_email">Email: <span class="error"></span></label>
-              <input class="call2action-group__input" type="email" name="user_email" id="user_email" require d
+              <input class="call2action-group__input" type="email" name="user_email" id="user_email" required
                 autocomplete="off" data-validation="email">
             </div>
             <div class="call2action-group inputControl">
               <label class="call2action-group__label" for="message">Mensaje: <span class="error"></span></label>
-              <textarea class="call2action-group__textarea" type="text" name="message" id="message" require d
+              <textarea class="call2action-group__textarea" type="text" name="message" id="message" required
                 autocomplete="off" data-validation="message"></textarea>
             </div>
             <input id="submit_form" class="call2action-group__submit" type="submit" value="Enviar Email">
@@ -378,16 +378,22 @@
         Swal.fire({
           title: title,
           text: message,
-          icon: "success",
-          confirmButtonText: "OK!",
+          confirmButtonText: "Aceptar",
+          confirmButtonColor: "#71CC98",
+          iconHtml: `<img width='100px' src='./src/assets/images/modal-success.svg'>`,
+          imageAlt: 'éxito',
+          background: "#fff"
         });
       }
       if (type === "error") {
         Swal.fire({
           title: title,
           text: message,
-          icon: "error",
-          confirmButtonText: "Ok!",
+          confirmButtonText: "Aceptar",
+          confirmButtonColor: "#71CC98",
+          iconHtml: `<img width='100px' src='./src/assets/images/modal-error.svg'>`,
+          imageAlt: 'error',
+          background: "#fff"
         });
       }
     }
