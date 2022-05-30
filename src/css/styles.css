@@ -252,8 +252,6 @@ header #logo {
   text-decoration: none;
 }
 header #logo svg {
-  background-color: var(--white);
-  border: 10px solid var(--white);
   height: 5.5rem;
   transition: transform 1s ease;
   width: 5.5em;
@@ -346,10 +344,10 @@ header .nav-bar ul .login {
 }
 
 .header-on-scroll #logo svg {
-  transform: scale(0.6) translateY(-25px);
+  transform: scale(0.6) translateY(-10px);
 }
 .header-on-scroll #logo h1 {
-  transform: scale(0.7) translateY(-25px) translateX(-60px);
+  transform: scale(0.7) translateY(-10px) translateX(-60px);
 }
 
 .container {
